@@ -1,0 +1,1002 @@
+[
+  {
+    "Question": "Which African capital city is located closest to the Prime Meridian (0° longitude)?",
+    "choices": [
+      "Algiers",
+      "Accra",
+      "Lagos",
+      "Dakar"
+    ],
+    "Answer": 2
+  },
+  {
+    "Question": "What is the capital city of Australia?",
+    "choices": [
+      "Melbourne",
+      "Sydney",
+      "Canberra",
+      "Brisbane"
+    ],
+    "Answer": 3
+  },
+  {
+    "Question": "Which mountain range naturally divides Europe and Asia?",
+    "choices": [
+      "The Alps",
+      "The Carpathian Mountains",
+      "The Caucasus Mountains",
+      "The Ural Mountains"
+    ],
+    "Answer": 4
+  },
+  {
+    "Question": "In which present-day country was the ancient city of Babylon located?",
+    "choices": [
+      "Jordan",
+      "Syria",
+      "Iraq",
+      "Iran"
+    ],
+    "Answer": 3
+  },
+  {
+    "Question": "Which US state has the longest coastline (including islands and inlets)?",
+    "choices": [
+      "Florida",
+      "Alaska",
+      "Hawaii",
+      "California"
+    ],
+    "Answer": 2
+  },
+  {
+    "Question": "Which battle is widely considered the turning point of the Pacific Theater in World War II?",
+    "choices": [
+      "Battle of Guadalcanal",
+      "Battle of Midway",
+      "Battle of Iwo Jima",
+      "Battle of the Coral Sea"
+    ],
+    "Answer": 2
+  },
+  {
+    "Question": "Which European nation was the first to land a ship in India via an ocean route?",
+    "choices": [
+      "England",
+      "Spain",
+      "The Netherlands",
+      "Portugal"
+    ],
+    "Answer": 4
+  },
+  {
+    "Question": "What is the largest landlocked country in the world by surface area?",
+    "choices": [
+      "Bolivia",
+      "Chad",
+      "Kazakhstan",
+      "Mongolia"
+    ],
+    "Answer": 3
+  },
+  {
+    "Question": "Who was the first Emperor of the Roman Empire?",
+    "choices": [
+      "Julius Caesar",
+      "Tiberius",
+      "Augustus",
+      "Nero"
+    ],
+    "Answer": 3
+  },
+  {
+    "Question": "Which South American river is the longest on the continent, second worldwide only to the Nile?",
+    "choices": [
+      "Magdalena",
+      "Orinoco",
+      "Amazon",
+      "Paraná"
+    ],
+    "Answer": 3
+  },
+  {
+    "Question": "In what year did the Berlin Wall fall, signaling the end of the Cold War era?",
+    "choices": [
+      "1989",
+      "1991",
+      "1987",
+      "1993"
+    ],
+    "Answer": 1
+  },
+  {
+    "Question": "Which modern Scandinavian country was historically home to the Hansa trading hub of Bryggen?",
+    "choices": [
+      "Norway",
+      "Denmark",
+      "Finland",
+      "Sweden"
+    ],
+    "Answer": 1
+  },
+  {
+    "Question": "Which empire built the famous stone complex of Machu Picchu?",
+    "choices": [
+      "Aztec Empire",
+      "Maya Civilization",
+      "Olmec Empire",
+      "Inca Empire"
+    ],
+    "Answer": 4
+  },
+  {
+    "Question": "What is the official language of Brazil?",
+    "choices": [
+      "French",
+      "Portuguese",
+      "Italian",
+      "Spanish"
+    ],
+    "Answer": 2
+  },
+  {
+    "Question": "Which US state was acquired from Russia in 1867?",
+    "choices": [
+      "Oregon",
+      "Montana",
+      "Washington",
+      "Alaska"
+    ],
+    "Answer": 4
+  },
+  {
+    "Question": "Which African nation was formerly known as Abyssinia?",
+    "choices": [
+      "Eritrea",
+      "Sudan",
+      "Ethiopia",
+      "Somalia"
+    ],
+    "Answer": 3
+  },
+  {
+    "Question": "What body of water lies between the Italian Peninsula and the Balkan Peninsula?",
+    "choices": [
+      "Tyrrhenian Sea",
+      "Adriatic Sea",
+      "Aegean Sea",
+      "Ionian Sea"
+    ],
+    "Answer": 2
+  },
+  {
+    "Question": "Which treaty officially ended World War I in 1919?",
+    "choices": [
+      "Treaty of Utrecht",
+      "Treaty of Ghent",
+      "Treaty of Versailles",
+      "Treaty of Paris"
+    ],
+    "Answer": 3
+  },
+  {
+    "Question": "Which Asian city was formerly known as Saigon?",
+    "choices": [
+      "Ho Chi Minh City",
+      "Hanoi",
+      "Da Nang",
+      "Phnom Penh"
+    ],
+    "Answer": 1
+  },
+  {
+    "Question": "What is the smallest independent country in the world by both land area and population?",
+    "choices": [
+      "Monaco",
+      "Vatican City",
+      "San Marino",
+      "Liechtenstein"
+    ],
+    "Answer": 2
+  },
+  {
+    "Question": "Which planet in our solar system has the highest surface temperature?",
+    "choices": [
+      "Jupiter",
+      "Mercury",
+      "Venus",
+      "Mars"
+    ],
+    "Answer": 3
+  },
+  {
+    "Question": "What is the main chemical element found in diamonds and graphite?",
+    "choices": [
+      "Germanium",
+      "Carbon",
+      "Titanium",
+      "Silicon"
+    ],
+    "Answer": 2
+  },
+  {
+    "Question": "Which human organ consumes the largest percentage of the body's total energy budget at rest?",
+    "choices": [
+      "Kidneys",
+      "Brain",
+      "Heart",
+      "Liver"
+    ],
+    "Answer": 2
+  },
+  {
+    "Question": "What is the speed of light in a vacuum (approximate rounded value)?",
+    "choices": [
+      "3,000,000 km/s",
+      "30,000 km/s",
+      "150,000 km/s",
+      "300,000 km/s"
+    ],
+    "Answer": 4
+  },
+  {
+    "Question": "Which gas makes up approximately 78% of Earth's atmosphere by volume?",
+    "choices": [
+      "Nitrogen",
+      "Carbon Dioxide",
+      "Argon",
+      "Oxygen"
+    ],
+    "Answer": 1
+  },
+  {
+    "Question": "What type of rock is formed by the cooling and solidification of molten magma or lava?",
+    "choices": [
+      "Composite",
+      "Igneous",
+      "Metamorphic",
+      "Sedimentary"
+    ],
+    "Answer": 2
+  },
+  {
+    "Question": "What is the chemical symbol for the element Gold?",
+    "choices": [
+      "Fe",
+      "Au",
+      "Pb",
+      "Ag"
+    ],
+    "Answer": 2
+  },
+  {
+    "Question": "Which part of a plant cell is responsible for carrying out photosynthesis?",
+    "choices": [
+      "Ribosome",
+      "Mitochondria",
+      "Golgi apparatus",
+      "Chloroplast"
+    ],
+    "Answer": 4
+  },
+  {
+    "Question": "What is the hardest naturally occurring substance on Earth?",
+    "choices": [
+      "Diamond",
+      "Quartz",
+      "Topaz",
+      "Corundum"
+    ],
+    "Answer": 1
+  },
+  {
+    "Question": "How many bones are in the standard adult human body?",
+    "choices": [
+      "206",
+      "212",
+      "220",
+      "198"
+    ],
+    "Answer": 1
+  },
+  {
+    "Question": "Which scientist proposed the theory of general relativity?",
+    "choices": [
+      "Niels Bohr",
+      "Albert Einstein",
+      "Max Planck",
+      "Isaac Newton"
+    ],
+    "Answer": 2
+  },
+  {
+    "Question": "What is the pH level of pure distilled water at 25°C?",
+    "choices": [
+      "7.0",
+      "5.0",
+      "8.5",
+      "6.2"
+    ],
+    "Answer": 1
+  },
+  {
+    "Question": "Which fundamental force keeps planets in orbit around the Sun?",
+    "choices": [
+      "Strong nuclear force",
+      "Electromagnetic force",
+      "Weak nuclear force",
+      "Gravity"
+    ],
+    "Answer": 4
+  },
+  {
+    "Question": "What is the term for animals that consume both plants and meat?",
+    "choices": [
+      "Herbivores",
+      "Carnivores",
+      "Detritivores",
+      "Omnivores"
+    ],
+    "Answer": 4
+  },
+  {
+    "Question": "What subatomic particle carries a negative electric charge?",
+    "choices": [
+      "Neutron",
+      "Positron",
+      "Electron",
+      "Proton"
+    ],
+    "Answer": 3
+  },
+  {
+    "Question": "Which blood type is known as the universal red blood cell donor?",
+    "choices": [
+      "AB negative",
+      "A positive",
+      "O positive",
+      "O negative"
+    ],
+    "Answer": 4
+  },
+  {
+    "Question": "What is the SI unit of electric resistance?",
+    "choices": [
+      "Watt",
+      "Ampere",
+      "Ohm",
+      "Volt"
+    ],
+    "Answer": 3
+  },
+  {
+    "Question": "Which group of living animals are the closest surviving relatives of birds?",
+    "choices": [
+      "Turtles",
+      "Lizards",
+      "Crocodilians",
+      "Amphibians"
+    ],
+    "Answer": 3
+  },
+  {
+    "Question": "What layer of Earth's atmosphere lies directly above the troposphere?",
+    "choices": [
+      "Thermosphere",
+      "Exosphere",
+      "Mesosphere",
+      "Stratosphere"
+    ],
+    "Answer": 4
+  },
+  {
+    "Question": "Which planet in our solar system has the shortest day (rotates fastest)?",
+    "choices": [
+      "Saturn",
+      "Neptune",
+      "Mercury",
+      "Jupiter"
+    ],
+    "Answer": 4
+  },
+  {
+    "Question": "Who wrote the classic 19th-century epic novel 'War and Peace'?",
+    "choices": [
+      "Leo Tolstoy",
+      "Ivan Turgenev",
+      "Anton Chekhov",
+      "Fyodor Dostoevsky"
+    ],
+    "Answer": 1
+  },
+  {
+    "Question": "Which artist painted the famous ceiling of the Sistine Chapel in Rome?",
+    "choices": [
+      "Leonardo da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Donatello"
+    ],
+    "Answer": 2
+  },
+  {
+    "Question": "In Shakespeare's 'Hamlet', of which country is Hamlet a prince?",
+    "choices": [
+      "Norway",
+      "England",
+      "Denmark",
+      "Scotland"
+    ],
+    "Answer": 3
+  },
+  {
+    "Question": "Which famous impressionist artist painted the 'Water Lilies' series?",
+    "choices": [
+      "Pierre-Auguste Renoir",
+      "Edgar Degas",
+      "Claude Monet",
+      "Paul Cézanne"
+    ],
+    "Answer": 3
+  },
+  {
+    "Question": "Who is the author of the dystopian novel '1984'?",
+    "choices": [
+      "Ray Bradbury",
+      "Aldous Huxley",
+      "George Orwell",
+      "H.G. Wells"
+    ],
+    "Answer": 3
+  },
+  {
+    "Question": "Which literary work begins with the famous line 'Call me Ishmael'?",
+    "choices": [
+      "The Great Gatsby",
+      "Moby-Dick",
+      "Heart of Darkness",
+      "The Old Man and the Sea"
+    ],
+    "Answer": 2
+  },
+  {
+    "Question": "Which Spanish surrealist artist painted 'The Persistence of Memory' featuring melting clocks?",
+    "choices": [
+      "Pablo Picasso",
+      "Joan Miró",
+      "Francisco Goya",
+      "Salvador Dalí"
+    ],
+    "Answer": 4
+  },
+  {
+    "Question": "In Mary Shelley's novel, who or what is 'Frankenstein'?",
+    "choices": [
+      "The assistant to the doctor",
+      "The scientist who creates the monster",
+      "The village where the events occur",
+      "The monster created from corpses"
+    ],
+    "Answer": 2
+  },
+  {
+    "Question": "Who composed the iconic four-movement orchestral work known as 'The Four Seasons'?",
+    "choices": [
+      "Wolfgang Amadeus Mozart",
+      "Ludwig van Beethoven",
+      "Antonio Vivaldi",
+      "Johann Sebastian Bach"
+    ],
+    "Answer": 3
+  },
+  {
+    "Question": "Which ancient Greek epic poem describes Odysseus' long journey home after the Trojan War?",
+    "choices": [
+      "The Iliad",
+      "The Theogony",
+      "The Odyssey",
+      "The Aeneid"
+    ],
+    "Answer": 3
+  },
+  {
+    "Question": "Which famous American poet wrote 'The Road Not Taken'?",
+    "choices": [
+      "Robert Frost",
+      "Langston Hughes",
+      "Walt Whitman",
+      "Emily Dickinson"
+    ],
+    "Answer": 1
+  },
+  {
+    "Question": "What musical instrument features 88 keys in its standard modern form?",
+    "choices": [
+      "Organ",
+      "Piano",
+      "Accordion",
+      "Harpsichord"
+    ],
+    "Answer": 2
+  },
+  {
+    "Question": "Which epic fantasy series set in Middle-earth was written by J.R.R. Tolkien?",
+    "choices": [
+      "The Chronicles of Narnia",
+      "The Lord of the Rings",
+      "The Wheel of Time",
+      "A Song of Ice and Fire"
+    ],
+    "Answer": 2
+  },
+  {
+    "Question": "Which art style or movement is characterized by tiny, distinct dots of color applied in patterns to form an image?",
+    "choices": [
+      "Expressionism",
+      "Cubism",
+      "Fauvism",
+      "Pointillism"
+    ],
+    "Answer": 4
+  },
+  {
+    "Question": "Who wrote the Victorian Gothic novel 'Jane Eyre' under the pen name Currer Bell?",
+    "choices": [
+      "Charlotte Brontë",
+      "Anne Brontë",
+      "Mary Shelley",
+      "Emily Brontë"
+    ],
+    "Answer": 1
+  },
+  {
+    "Question": "Which musical period was defined by composers such as Bach, Handel, and Vivaldi?",
+    "choices": [
+      "Baroque",
+      "Classical",
+      "Romantic",
+      "Renaissance"
+    ],
+    "Answer": 1
+  },
+  {
+    "Question": "Who is the protagonist and narrator of Mark Twain's 'Adventures of Huckleberry Finn'?",
+    "choices": [
+      "Tom Sawyer",
+      "Aunt Polly",
+      "Jim",
+      "Huckleberry Finn"
+    ],
+    "Answer": 4
+  },
+  {
+    "Question": "Which sculptor created the monumental marble statue 'David' located in Florence?",
+    "choices": [
+      "Donatello",
+      "Michelangelo",
+      "Rodin",
+      "Bernini"
+    ],
+    "Answer": 2
+  },
+  {
+    "Question": "In Greek mythology, who was condemned to hold up the celestial heavens for eternity?",
+    "choices": [
+      "Hercules",
+      "Atlas",
+      "Sisyphus",
+      "Prometheus"
+    ],
+    "Answer": 2
+  },
+  {
+    "Question": "Which famous opera by Bizet features the iconic aria 'Habanera'?",
+    "choices": [
+      "La Traviata",
+      "The Barber of Seville",
+      "Tosca",
+      "Carmen"
+    ],
+    "Answer": 4
+  },
+  {
+    "Question": "What is the mathematical term for a number that can only be divided evenly by 1 and itself?",
+    "choices": [
+      "Composite number",
+      "Rational number",
+      "Irrational number",
+      "Prime number"
+    ],
+    "Answer": 4
+  },
+  {
+    "Question": "What does the tech acronym 'CPU' stand for?",
+    "choices": [
+      "Core Processing Utility",
+      "Computer Power Unit",
+      "Central Performance Union",
+      "Central Processing Unit"
+    ],
+    "Answer": 4
+  },
+  {
+    "Question": "What is the square root of 144?",
+    "choices": [
+      "14",
+      "13",
+      "11",
+      "12"
+    ],
+    "Answer": 4
+  },
+  {
+    "Question": "Which binary number is equivalent to the decimal number 10?",
+    "choices": [
+      "1001",
+      "1010",
+      "1100",
+      "1011"
+    ],
+    "Answer": 2
+  },
+  {
+    "Question": "In geometry, what is the sum of interior angles of any triangle?",
+    "choices": [
+      "90 degrees",
+      "180 degrees",
+      "270 degrees",
+      "360 degrees"
+    ],
+    "Answer": 2
+  },
+  {
+    "Question": "Which programming language was created by Guido van Rossum and released in 1991?",
+    "choices": [
+      "Python",
+      "C++",
+      "Java",
+      "Ruby"
+    ],
+    "Answer": 1
+  },
+  {
+    "Question": "What is the value of 5 factorial (5!)?",
+    "choices": [
+      "150",
+      "100",
+      "60",
+      "120"
+    ],
+    "Answer": 4
+  },
+  {
+    "Question": "In computing, what does 'HTTP' stand for in web addresses?",
+    "choices": [
+      "Hypertext Technical Program",
+      "Hypertext Transfer Protocol",
+      "High Transfer Text Protocol",
+      "Hyperlink Text Transmission Process"
+    ],
+    "Answer": 2
+  },
+  {
+    "Question": "What geometric shape has eight sides of equal length?",
+    "choices": [
+      "Heptagon",
+      "Hexagon",
+      "Nonagon",
+      "Octagon"
+    ],
+    "Answer": 4
+  },
+  {
+    "Question": "Which mathematician is famous for the Pythagorean theorem regarding right-angled triangles?",
+    "choices": [
+      "Pytheas",
+      "Euclid",
+      "Archimedes",
+      "Pythagoras"
+    ],
+    "Answer": 4
+  },
+  {
+    "Question": "What is the primary function of RAM in a computer system?",
+    "choices": [
+      "Permanent long-term storage",
+      "Temporary short-term memory",
+      "Network connectivity",
+      "Graphic processing"
+    ],
+    "Answer": 2
+  },
+  {
+    "Question": "What is the smallest positive integer that is divisible by both 4 and 6?",
+    "choices": [
+      "18",
+      "16",
+      "12",
+      "24"
+    ],
+    "Answer": 3
+  },
+  {
+    "Question": "Who is widely considered the father of modern computer science and artificial intelligence?",
+    "choices": [
+      "Charles Babbage",
+      "Alan Turing",
+      "John von Neumann",
+      "Ada Lovelace"
+    ],
+    "Answer": 2
+  },
+  {
+    "Question": "What mathematical constant represents the ratio of a circle's circumference to its diameter?",
+    "choices": [
+      "Tau (τ)",
+      "Golden ratio (phi)",
+      "Euler's number (e)",
+      "Pi (π)"
+    ],
+    "Answer": 4
+  },
+  {
+    "Question": "Which data structure operates on a First-In, First-Out (FIFO) basis?",
+    "choices": [
+      "Tree",
+      "Stack",
+      "Queue",
+      "Graph"
+    ],
+    "Answer": 3
+  },
+  {
+    "Question": "What is the slope of a horizontal line on a Cartesian coordinate plane?",
+    "choices": [
+      "0",
+      "1",
+      "Undefined",
+      "-1"
+    ],
+    "Answer": 1
+  },
+  {
+    "Question": "Which company developed the Android operating system before it was acquired by Google in 2005?",
+    "choices": [
+      "Palm",
+      "Android Inc.",
+      "BlackBerry",
+      "Symbian"
+    ],
+    "Answer": 2
+  },
+  {
+    "Question": "In probability, what is the probability of rolling a sum of 7 with two standard 6-sided dice?",
+    "choices": [
+      "1/12",
+      "1/6",
+      "1/36",
+      "5/36"
+    ],
+    "Answer": 2
+  },
+  {
+    "Question": "What does the 'S' in HTTPS stand for?",
+    "choices": [
+      "Socket",
+      "Standard",
+      "Secure",
+      "System"
+    ],
+    "Answer": 3
+  },
+  {
+    "Question": "In boolean algebra, what is the result of the expression 'True AND False'?",
+    "choices": [
+      "True",
+      "Undefined",
+      "Null",
+      "False"
+    ],
+    "Answer": 4
+  },
+  {
+    "Question": "How many players are on the field for one team during a standard soccer match?",
+    "choices": [
+      "9",
+      "12",
+      "10",
+      "11"
+    ],
+    "Answer": 4
+  },
+  {
+    "Question": "Which movie won the Academy Award for Best Picture at the 92nd Oscars ceremony in 2020, becoming the first non-English language film to win?",
+    "choices": [
+      "1917",
+      "Parasite",
+      "Minari",
+      "Roma"
+    ],
+    "Answer": 2
+  },
+  {
+    "Question": "In chess, which piece can move in an 'L' shape and leap over other pieces?",
+    "choices": [
+      "Knight",
+      "Rook",
+      "Pawn",
+      "Bishop"
+    ],
+    "Answer": 1
+  },
+  {
+    "Question": "Which country hosted the Summer Olympic Games in 2016?",
+    "choices": [
+      "United Kingdom",
+      "Japan",
+      "Brazil",
+      "China"
+    ],
+    "Answer": 3
+  },
+  {
+    "Question": "Who painted 'The Starry Night' while staying at the Saint-Paul-de-Mausole asylum in Saint-Rémy-de-Provence?",
+    "choices": [
+      "Pablo Picasso",
+      "Vincent van Gogh",
+      "Paul Gauguin",
+      "Claude Monet"
+    ],
+    "Answer": 2
+  },
+  {
+    "Question": "In tennis, what term represents a score of zero points within a game?",
+    "choices": [
+      "Love",
+      "Fault",
+      "Deuce",
+      "Nil"
+    ],
+    "Answer": 1
+  },
+  {
+    "Question": "Which British band released the critically acclaimed album 'Abbey Road' in 1969?",
+    "choices": [
+      "The Who",
+      "Led Zeppelin",
+      "The Beatles",
+      "The Rolling Stones"
+    ],
+    "Answer": 3
+  },
+  {
+    "Question": "What is the standard distance of a full marathon in miles (approximate)?",
+    "choices": [
+      "30.0 miles",
+      "13.1 miles",
+      "20.0 miles",
+      "26.2 miles"
+    ],
+    "Answer": 4
+  },
+  {
+    "Question": "Which animated character lives in a pineapple under the sea?",
+    "choices": [
+      "Patrick Star",
+      "Mr. Krabs",
+      "SpongeBob SquarePants",
+      "Squidward Tentacles"
+    ],
+    "Answer": 3
+  },
+  {
+    "Question": "In basketball, how many points is a successful field goal made from beyond the designated arc worth?",
+    "choices": [
+      "4 points",
+      "2 points",
+      "3 points",
+      "1 point"
+    ],
+    "Answer": 3
+  },
+  {
+    "Question": "Which fictional superhero is known as the 'Dark Knight' of Gotham City?",
+    "choices": [
+      "Iron Man",
+      "Superman",
+      "Batman",
+      "Spider-Man"
+    ],
+    "Answer": 3
+  },
+  {
+    "Question": "What award is annually given to honor excellence in US television broadcasting?",
+    "choices": [
+      "Grammy",
+      "Emmy",
+      "Oscar",
+      "Tony"
+    ],
+    "Answer": 2
+  },
+  {
+    "Question": "Which team won the FIFA Men's World Cup in 2018?",
+    "choices": [
+      "Brazil",
+      "Croatia",
+      "Germany",
+      "France"
+    ],
+    "Answer": 4
+  },
+  {
+    "Question": "Who directed the iconic 1994 film 'Pulp Fiction'?",
+    "choices": [
+      "Quentin Tarantino",
+      "Steven Spielberg",
+      "Christopher Nolan",
+      "Martin Scorsese"
+    ],
+    "Answer": 1
+  },
+  {
+    "Question": "Which musical artist released the smash-hit studio album 'Thriller' in 1982?",
+    "choices": [
+      "Michael Jackson",
+      "Whitney Houston",
+      "Prince",
+      "Stevie Wonder"
+    ],
+    "Answer": 1
+  },
+  {
+    "Question": "What is the primary color of the five rings on the official Olympic flag, going from left to right on the top row?",
+    "choices": [
+      "Blue, Yellow, Black",
+      "Red, Green, Blue",
+      "Green, Yellow, Black",
+      "Blue, Black, Red"
+    ],
+    "Answer": 4
+  },
+  {
+    "Question": "In which sport would you execute a 'slam dunk'?",
+    "choices": [
+      "Volleyball",
+      "Handball",
+      "Tennis",
+      "Basketball"
+    ],
+    "Answer": 4
+  },
+  {
+    "Question": "Which author created the world-famous detective Sherlock Holmes?",
+    "choices": [
+      "Arthur Conan Doyle",
+      "Agatha Christie",
+      "Edgar Allan Poe",
+      "G.K. Chesterton"
+    ],
+    "Answer": 1
+  },
+  {
+    "Question": "What is the max score achievable in a single frame of bowling without striking twice or throwing a spare?",
+    "choices": [
+      "10",
+      "9",
+      "15",
+      "20"
+    ],
+    "Answer": 2
+  },
+  {
+    "Question": "Which popular video game series features characters such as Link, Zelda, and Ganon?",
+    "choices": [
+      "Final Fantasy",
+      "Elder Scrolls",
+      "The Legend of Zelda",
+      "Super Mario"
+    ],
+    "Answer": 3
+  }
+]

@@ -1,0 +1,699 @@
+Question #1: Which African capital city is located closest to the Prime Meridian (0° longitude)?
+    1) Algiers
+    2) Accra
+    3) Lagos
+    4) Dakar
+Answer: 2
+
+Question #2: What is the capital city of Australia?
+    1) Melbourne
+    2) Sydney
+    3) Canberra
+    4) Brisbane
+Answer: 3
+
+Question #3: Which mountain range naturally divides Europe and Asia?
+    1) The Alps
+    2) The Carpathian Mountains
+    3) The Caucasus Mountains
+    4) The Ural Mountains
+Answer: 4
+
+Question #4: In which present-day country was the ancient city of Babylon located?
+    1) Jordan
+    2) Syria
+    3) Iraq
+    4) Iran
+Answer: 3
+
+Question #5: Which US state has the longest coastline (including islands and inlets)?
+    1) Florida
+    2) Alaska
+    3) Hawaii
+    4) California
+Answer: 2
+
+Question #6: Which battle is widely considered the turning point of the Pacific Theater in World War II?
+    1) Battle of Guadalcanal
+    2) Battle of Midway
+    3) Battle of Iwo Jima
+    4) Battle of the Coral Sea
+Answer: 2
+
+Question #7: Which European nation was the first to land a ship in India via an ocean route?
+    1) England
+    2) Spain
+    3) The Netherlands
+    4) Portugal
+Answer: 4
+
+Question #8: What is the largest landlocked country in the world by surface area?
+    1) Bolivia
+    2) Chad
+    3) Kazakhstan
+    4) Mongolia
+Answer: 3
+
+Question #9: Who was the first Emperor of the Roman Empire?
+    1) Julius Caesar
+    2) Tiberius
+    3) Augustus
+    4) Nero
+Answer: 3
+
+Question #10: Which South American river is the longest on the continent, second worldwide only to the Nile?
+    1) Magdalena
+    2) Orinoco
+    3) Amazon
+    4) Paraná
+Answer: 3
+
+Question #11: In what year did the Berlin Wall fall, signaling the end of the Cold War era?
+    1) 1989
+    2) 1991
+    3) 1987
+    4) 1993
+Answer: 1
+
+Question #12: Which modern Scandinavian country was historically home to the Hansa trading hub of Bryggen?
+    1) Norway
+    2) Denmark
+    3) Finland
+    4) Sweden
+Answer: 1
+
+Question #13: Which empire built the famous stone complex of Machu Picchu?
+    1) Aztec Empire
+    2) Maya Civilization
+    3) Olmec Empire
+    4) Inca Empire
+Answer: 4
+
+Question #14: What is the official language of Brazil?
+    1) French
+    2) Portuguese
+    3) Italian
+    4) Spanish
+Answer: 2
+
+Question #15: Which US state was acquired from Russia in 1867?
+    1) Oregon
+    2) Montana
+    3) Washington
+    4) Alaska
+Answer: 4
+
+Question #16: Which African nation was formerly known as Abyssinia?
+    1) Eritrea
+    2) Sudan
+    3) Ethiopia
+    4) Somalia
+Answer: 3
+
+Question #17: What body of water lies between the Italian Peninsula and the Balkan Peninsula?
+    1) Tyrrhenian Sea
+    2) Adriatic Sea
+    3) Aegean Sea
+    4) Ionian Sea
+Answer: 2
+
+Question #18: Which treaty officially ended World War I in 1919?
+    1) Treaty of Utrecht
+    2) Treaty of Ghent
+    3) Treaty of Versailles
+    4) Treaty of Paris
+Answer: 3
+
+Question #19: Which Asian city was formerly known as Saigon?
+    1) Ho Chi Minh City
+    2) Hanoi
+    3) Da Nang
+    4) Phnom Penh
+Answer: 1
+
+Question #20: What is the smallest independent country in the world by both land area and population?
+    1) Monaco
+    2) Vatican City
+    3) San Marino
+    4) Liechtenstein
+Answer: 2
+
+Question #21: Which planet in our solar system has the highest surface temperature?
+    1) Jupiter
+    2) Mercury
+    3) Venus
+    4) Mars
+Answer: 3
+
+Question #22: What is the main chemical element found in diamonds and graphite?
+    1) Germanium
+    2) Carbon
+    3) Titanium
+    4) Silicon
+Answer: 2
+
+Question #23: Which human organ consumes the largest percentage of the body's total energy budget at rest?
+    1) Kidneys
+    2) Brain
+    3) Heart
+    4) Liver
+Answer: 2
+
+Question #24: What is the speed of light in a vacuum (approximate rounded value)?
+    1) 3,000,000 km/s
+    2) 30,000 km/s
+    3) 150,000 km/s
+    4) 300,000 km/s
+Answer: 4
+
+Question #25: Which gas makes up approximately 78% of Earth's atmosphere by volume?
+    1) Nitrogen
+    2) Carbon Dioxide
+    3) Argon
+    4) Oxygen
+Answer: 1
+
+Question #26: What type of rock is formed by the cooling and solidification of molten magma or lava?
+    1) Composite
+    2) Igneous
+    3) Metamorphic
+    4) Sedimentary
+Answer: 2
+
+Question #27: What is the chemical symbol for the element Gold?
+    1) Fe
+    2) Au
+    3) Pb
+    4) Ag
+Answer: 2
+
+Question #28: Which part of a plant cell is responsible for carrying out photosynthesis?
+    1) Ribosome
+    2) Mitochondria
+    3) Golgi apparatus
+    4) Chloroplast
+Answer: 4
+
+Question #29: What is the hardest naturally occurring substance on Earth?
+    1) Diamond
+    2) Quartz
+    3) Topaz
+    4) Corundum
+Answer: 1
+
+Question #30: How many bones are in the standard adult human body?
+    1) 206
+    2) 212
+    3) 220
+    4) 198
+Answer: 1
+
+Question #31: Which scientist proposed the theory of general relativity?
+    1) Niels Bohr
+    2) Albert Einstein
+    3) Max Planck
+    4) Isaac Newton
+Answer: 2
+
+Question #32: What is the pH level of pure distilled water at 25°C?
+    1) 7.0
+    2) 5.0
+    3) 8.5
+    4) 6.2
+Answer: 1
+
+Question #33: Which fundamental force keeps planets in orbit around the Sun?
+    1) Strong nuclear force
+    2) Electromagnetic force
+    3) Weak nuclear force
+    4) Gravity
+Answer: 4
+
+Question #34: What is the term for animals that consume both plants and meat?
+    1) Herbivores
+    2) Carnivores
+    3) Detritivores
+    4) Omnivores
+Answer: 4
+
+Question #35: What subatomic particle carries a negative electric charge?
+    1) Neutron
+    2) Positron
+    3) Electron
+    4) Proton
+Answer: 3
+
+Question #36: Which blood type is known as the universal red blood cell donor?
+    1) AB negative
+    2) A positive
+    3) O positive
+    4) O negative
+Answer: 4
+
+Question #37: What is the SI unit of electric resistance?
+    1) Watt
+    2) Ampere
+    3) Ohm
+    4) Volt
+Answer: 3
+
+Question #38: Which group of living animals are the closest surviving relatives of birds?
+    1) Turtles
+    2) Lizards
+    3) Crocodilians
+    4) Amphibians
+Answer: 3
+
+Question #39: What layer of Earth's atmosphere lies directly above the troposphere?
+    1) Thermosphere
+    2) Exosphere
+    3) Mesosphere
+    4) Stratosphere
+Answer: 4
+
+Question #40: Which planet in our solar system has the shortest day (rotates fastest)?
+    1) Saturn
+    2) Neptune
+    3) Mercury
+    4) Jupiter
+Answer: 4
+
+Question #41: Who wrote the classic 19th-century epic novel 'War and Peace'?
+    1) Leo Tolstoy
+    2) Ivan Turgenev
+    3) Anton Chekhov
+    4) Fyodor Dostoevsky
+Answer: 1
+
+Question #42: Which artist painted the famous ceiling of the Sistine Chapel in Rome?
+    1) Leonardo da Vinci
+    2) Michelangelo
+    3) Raphael
+    4) Donatello
+Answer: 2
+
+Question #43: In Shakespeare's 'Hamlet', of which country is Hamlet a prince?
+    1) Norway
+    2) England
+    3) Denmark
+    4) Scotland
+Answer: 3
+
+Question #44: Which famous impressionist artist painted the 'Water Lilies' series?
+    1) Pierre-Auguste Renoir
+    2) Edgar Degas
+    3) Claude Monet
+    4) Paul Cézanne
+Answer: 3
+
+Question #45: Who is the author of the dystopian novel '1984'?
+    1) Ray Bradbury
+    2) Aldous Huxley
+    3) George Orwell
+    4) H.G. Wells
+Answer: 3
+
+Question #46: Which literary work begins with the famous line 'Call me Ishmael'?
+    1) The Great Gatsby
+    2) Moby-Dick
+    3) Heart of Darkness
+    4) The Old Man and the Sea
+Answer: 2
+
+Question #47: Which Spanish surrealist artist painted 'The Persistence of Memory' featuring melting clocks?
+    1) Pablo Picasso
+    2) Joan Miró
+    3) Francisco Goya
+    4) Salvador Dalí
+Answer: 4
+
+Question #48: In Mary Shelley's novel, who or what is 'Frankenstein'?
+    1) The assistant to the doctor
+    2) The scientist who creates the monster
+    3) The village where the events occur
+    4) The monster created from corpses
+Answer: 2
+
+Question #49: Who composed the iconic four-movement orchestral work known as 'The Four Seasons'?
+    1) Wolfgang Amadeus Mozart
+    2) Ludwig van Beethoven
+    3) Antonio Vivaldi
+    4) Johann Sebastian Bach
+Answer: 3
+
+Question #50: Which ancient Greek epic poem describes Odysseus' long journey home after the Trojan War?
+    1) The Iliad
+    2) The Theogony
+    3) The Odyssey
+    4) The Aeneid
+Answer: 3
+
+Question #51: Which famous American poet wrote 'The Road Not Taken'?
+    1) Robert Frost
+    2) Langston Hughes
+    3) Walt Whitman
+    4) Emily Dickinson
+Answer: 1
+
+Question #52: What musical instrument features 88 keys in its standard modern form?
+    1) Organ
+    2) Piano
+    3) Accordion
+    4) Harpsichord
+Answer: 2
+
+Question #53: Which epic fantasy series set in Middle-earth was written by J.R.R. Tolkien?
+    1) The Chronicles of Narnia
+    2) The Lord of the Rings
+    3) The Wheel of Time
+    4) A Song of Ice and Fire
+Answer: 2
+
+Question #54: Which art style or movement is characterized by tiny, distinct dots of color applied in patterns to form an image?
+    1) Expressionism
+    2) Cubism
+    3) Fauvism
+    4) Pointillism
+Answer: 4
+
+Question #55: Who wrote the Victorian Gothic novel 'Jane Eyre' under the pen name Currer Bell?
+    1) Charlotte Brontë
+    2) Anne Brontë
+    3) Mary Shelley
+    4) Emily Brontë
+Answer: 1
+
+Question #56: Which musical period was defined by composers such as Bach, Handel, and Vivaldi?
+    1) Baroque
+    2) Classical
+    3) Romantic
+    4) Renaissance
+Answer: 1
+
+Question #57: Who is the protagonist and narrator of Mark Twain's 'Adventures of Huckleberry Finn'?
+    1) Tom Sawyer
+    2) Aunt Polly
+    3) Jim
+    4) Huckleberry Finn
+Answer: 4
+
+Question #58: Which sculptor created the monumental marble statue 'David' located in Florence?
+    1) Donatello
+    2) Michelangelo
+    3) Rodin
+    4) Bernini
+Answer: 2
+
+Question #59: In Greek mythology, who was condemned to hold up the celestial heavens for eternity?
+    1) Hercules
+    2) Atlas
+    3) Sisyphus
+    4) Prometheus
+Answer: 2
+
+Question #60: Which famous opera by Bizet features the iconic aria 'Habanera'?
+    1) La Traviata
+    2) The Barber of Seville
+    3) Tosca
+    4) Carmen
+Answer: 4
+
+Question #61: What is the mathematical term for a number that can only be divided evenly by 1 and itself?
+    1) Composite number
+    2) Rational number
+    3) Irrational number
+    4) Prime number
+Answer: 4
+
+Question #62: What does the tech acronym 'CPU' stand for?
+    1) Core Processing Utility
+    2) Computer Power Unit
+    3) Central Performance Union
+    4) Central Processing Unit
+Answer: 4
+
+Question #63: What is the square root of 144?
+    1) 14
+    2) 13
+    3) 11
+    4) 12
+Answer: 4
+
+Question #64: Which binary number is equivalent to the decimal number 10?
+    1) 1001
+    2) 1010
+    3) 1100
+    4) 1011
+Answer: 2
+
+Question #65: In geometry, what is the sum of interior angles of any triangle?
+    1) 90 degrees
+    2) 180 degrees
+    3) 270 degrees
+    4) 360 degrees
+Answer: 2
+
+Question #66: Which programming language was created by Guido van Rossum and released in 1991?
+    1) Python
+    2) C++
+    3) Java
+    4) Ruby
+Answer: 1
+
+Question #67: What is the value of 5 factorial (5!)?
+    1) 150
+    2) 100
+    3) 60
+    4) 120
+Answer: 4
+
+Question #68: In computing, what does 'HTTP' stand for in web addresses?
+    1) Hypertext Technical Program
+    2) Hypertext Transfer Protocol
+    3) High Transfer Text Protocol
+    4) Hyperlink Text Transmission Process
+Answer: 2
+
+Question #69: What geometric shape has eight sides of equal length?
+    1) Heptagon
+    2) Hexagon
+    3) Nonagon
+    4) Octagon
+Answer: 4
+
+Question #70: Which mathematician is famous for the Pythagorean theorem regarding right-angled triangles?
+    1) Pytheas
+    2) Euclid
+    3) Archimedes
+    4) Pythagoras
+Answer: 4
+
+Question #71: What is the primary function of RAM in a computer system?
+    1) Permanent long-term storage
+    2) Temporary short-term memory
+    3) Network connectivity
+    4) Graphic processing
+Answer: 2
+
+Question #72: What is the smallest positive integer that is divisible by both 4 and 6?
+    1) 18
+    2) 16
+    3) 12
+    4) 24
+Answer: 3
+
+Question #73: Who is widely considered the father of modern computer science and artificial intelligence?
+    1) Charles Babbage
+    2) Alan Turing
+    3) John von Neumann
+    4) Ada Lovelace
+Answer: 2
+
+Question #74: What mathematical constant represents the ratio of a circle's circumference to its diameter?
+    1) Tau (τ)
+    2) Golden ratio (phi)
+    3) Euler's number (e)
+    4) Pi (π)
+Answer: 4
+
+Question #75: Which data structure operates on a First-In, First-Out (FIFO) basis?
+    1) Tree
+    2) Stack
+    3) Queue
+    4) Graph
+Answer: 3
+
+Question #76: What is the slope of a horizontal line on a Cartesian coordinate plane?
+    1) 0
+    2) 1
+    3) Undefined
+    4) -1
+Answer: 1
+
+Question #77: Which company developed the Android operating system before it was acquired by Google in 2005?
+    1) Palm
+    2) Android Inc.
+    3) BlackBerry
+    4) Symbian
+Answer: 2
+
+Question #78: In probability, what is the probability of rolling a sum of 7 with two standard 6-sided dice?
+    1) 1/12
+    2) 1/6
+    3) 1/36
+    4) 5/36
+Answer: 2
+
+Question #79: What does the 'S' in HTTPS stand for?
+    1) Socket
+    2) Standard
+    3) Secure
+    4) System
+Answer: 3
+
+Question #80: In boolean algebra, what is the result of the expression 'True AND False'?
+    1) True
+    2) Undefined
+    3) Null
+    4) False
+Answer: 4
+
+Question #81: How many players are on the field for one team during a standard soccer match?
+    1) 9
+    2) 12
+    3) 10
+    4) 11
+Answer: 4
+
+Question #82: Which movie won the Academy Award for Best Picture at the 92nd Oscars ceremony in 2020, becoming the first non-English language film to win?
+    1) 1917
+    2) Parasite
+    3) Minari
+    4) Roma
+Answer: 2
+
+Question #83: In chess, which piece can move in an 'L' shape and leap over other pieces?
+    1) Knight
+    2) Rook
+    3) Pawn
+    4) Bishop
+Answer: 1
+
+Question #84: Which country hosted the Summer Olympic Games in 2016?
+    1) United Kingdom
+    2) Japan
+    3) Brazil
+    4) China
+Answer: 3
+
+Question #85: Who painted 'The Starry Night' while staying at the Saint-Paul-de-Mausole asylum in Saint-Rémy-de-Provence?
+    1) Pablo Picasso
+    2) Vincent van Gogh
+    3) Paul Gauguin
+    4) Claude Monet
+Answer: 2
+
+Question #86: In tennis, what term represents a score of zero points within a game?
+    1) Love
+    2) Fault
+    3) Deuce
+    4) Nil
+Answer: 1
+
+Question #87: Which British band released the critically acclaimed album 'Abbey Road' in 1969?
+    1) The Who
+    2) Led Zeppelin
+    3) The Beatles
+    4) The Rolling Stones
+Answer: 3
+
+Question #88: What is the standard distance of a full marathon in miles (approximate)?
+    1) 30.0 miles
+    2) 13.1 miles
+    3) 20.0 miles
+    4) 26.2 miles
+Answer: 4
+
+Question #89: Which animated character lives in a pineapple under the sea?
+    1) Patrick Star
+    2) Mr. Krabs
+    3) SpongeBob SquarePants
+    4) Squidward Tentacles
+Answer: 3
+
+Question #90: In basketball, how many points is a successful field goal made from beyond the designated arc worth?
+    1) 4 points
+    2) 2 points
+    3) 3 points
+    4) 1 point
+Answer: 3
+
+Question #91: Which fictional superhero is known as the 'Dark Knight' of Gotham City?
+    1) Iron Man
+    2) Superman
+    3) Batman
+    4) Spider-Man
+Answer: 3
+
+Question #92: What award is annually given to honor excellence in US television broadcasting?
+    1) Grammy
+    2) Emmy
+    3) Oscar
+    4) Tony
+Answer: 2
+
+Question #93: Which team won the FIFA Men's World Cup in 2018?
+    1) Brazil
+    2) Croatia
+    3) Germany
+    4) France
+Answer: 4
+
+Question #94: Who directed the iconic 1994 film 'Pulp Fiction'?
+    1) Quentin Tarantino
+    2) Steven Spielberg
+    3) Christopher Nolan
+    4) Martin Scorsese
+Answer: 1
+
+Question #95: Which musical artist released the smash-hit studio album 'Thriller' in 1982?
+    1) Michael Jackson
+    2) Whitney Houston
+    3) Prince
+    4) Stevie Wonder
+Answer: 1
+
+Question #96: What is the primary color of the five rings on the official Olympic flag, going from left to right on the top row?
+    1) Blue, Yellow, Black
+    2) Red, Green, Blue
+    3) Green, Yellow, Black
+    4) Blue, Black, Red
+Answer: 4
+
+Question #97: In which sport would you execute a 'slam dunk'?
+    1) Volleyball
+    2) Handball
+    3) Tennis
+    4) Basketball
+Answer: 4
+
+Question #98: Which author created the world-famous detective Sherlock Holmes?
+    1) Arthur Conan Doyle
+    2) Agatha Christie
+    3) Edgar Allan Poe
+    4) G.K. Chesterton
+Answer: 1
+
+Question #99: What is the max score achievable in a single frame of bowling without striking twice or throwing a spare?
+    1) 10
+    2) 9
+    3) 15
+    4) 20
+Answer: 2
+
+Question #100: Which popular video game series features characters such as Link, Zelda, and Ganon?
+    1) Final Fantasy
+    2) Elder Scrolls
+    3) The Legend of Zelda
+    4) Super Mario
+Answer: 3
