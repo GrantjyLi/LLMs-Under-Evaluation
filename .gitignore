@@ -1,4 +1,5 @@
 .venv
 venv
 .env
-pycache
+Prompts/__pycache__
+Responses/*
