@@ -6,7 +6,7 @@ class LLMSession:
     NUM_PROMPT_ATTEMPTS = 3
     MAX_TOKENS = 128
 
-    def __init__(self, model_name: str, pull_if_missing: bool = True):
+    def __init__(self, model_name, pull_if_missing = True):
         self.model_name = model_name
         self._pull_if_missing = pull_if_missing
 
@@ -28,7 +28,7 @@ class LLMSession:
         print(f"'{self.model_name}' loaded.")
         print("==================================================\n")
 
-    def prompt(self, text: str, thinking: bool = True) -> str:
+    def prompt(self, text, thinking = True) -> str:
         options = {"num_predict": -1}
         if thinking: options["num_predict"] = self.MAX_TOKENS
 

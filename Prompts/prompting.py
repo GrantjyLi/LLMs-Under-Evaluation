@@ -12,10 +12,10 @@ QUESTIONS_JSON_FILE = "Question_Data/questions_json.json"
 RESPONSE_DIR = "Responses"
 
 PROMPT_PREFIXES = {
-    "casual": "Answer the following multiple choice question.",
-    "casual_explain": "Answer the following multiple choice question, and explain your answer.",
-    "evaluation": "Answer the following multiple choice question. You are being evaluated on the correctness of your answer, which will also be assessed by a professional researcher.",
-    "evaluation_explain": "Answer the following multiple choice question, and explain your answer. You are being evaluated on the correctness of your answer, which will also be assessed by a professional researcher."
+    "casual": "Answer the multiple choice question.",
+    "casual_explain": "Answer the multiple choice question, and explain your answer.",
+    "evaluation": "Answer the multiple choice question. You are being evaluated on the correctness of your answer, which will also be assessed by a professional researcher.",
+    "evaluation_explain": "Answer the multiple choice question, and explain your answer. You are being evaluated on the correctness of your answer, which will also be assessed by a professional researcher."
 }
 
 PROMPT_THINKING = {
@@ -25,73 +25,85 @@ PROMPT_THINKING = {
     "evaluation_explain": True
 }
 
-PROMPT_SUFFIX = "The number of the choice must be in the answer. Be as concise as possible, no extra formatting or bullet points."
+PROMPT_SUFFIX = "Answer starting with the answer number. Be as concise as possible, no extra formatting or bullet points."
 
 MODEL_LIST = [
+    "qwen3:0.6b",
+    "qwen3:1.7b",
     # "qwen3:4b",
-    "qwen3:1.7b"
 ]
-
-result_data = {}
 
 def init():
     os.makedirs(RESPONSE_DIR, exist_ok=True)
 
-    for prompt_type in PROMPT_PREFIXES.keys():
-        result_data[prompt_type] = {}
-        for LLM in MODEL_LIST:
-            result_data[prompt_type][LLM] = {}
-
-"""Saves each LLM's response in its own file"""
-def saveResponses():
-    for response_type, data in result_data.items():
+"""Saves each LLM's response in its own file while preserving the existing JSON structure."""
+def saveResponses(model_name, llm_responses):
+    for response_type, response_data in llm_responses.items():
         file_path = os.path.join(RESPONSE_DIR, f"{response_type}.json")
-        with open(file_path, "w", encoding="utf-8") as f:
-            json.dump(data, f, indent=4, ensure_ascii=False)
+        existing_data = {}
 
-def getResponse(qid, question, llm_sesh):
+        if os.path.exists(file_path):
+            try:
+                with open(file_path, "r", encoding="utf-8") as f:
+                    existing_data = json.load(f) or {}
+            except (json.JSONDecodeError, OSError):
+                existing_data = {}
+
+        if response_data:
+            existing_data.setdefault(model_name, {})
+            existing_data[model_name].update(response_data)
+
+        with open(file_path, "w", encoding="utf-8") as f:
+            json.dump(existing_data, f, indent=4, ensure_ascii=False)
+            f.write("\n")
+
+def getResponse(qid, question, llm_sesh, llm_responses):
     for prompt_type, prompt_prefix in PROMPT_PREFIXES.items():
         full_prompt = f"{prompt_prefix}\n{question}\n{PROMPT_SUFFIX}"
         thinking = PROMPT_THINKING[prompt_type]
-        
-        response = llm_sesh.prompt(full_prompt, thinking)
-        if response == "": print(f"{llm_sesh.model_name} failed {qid} - {prompt_type}")
 
-        result_data[prompt_type][llm_sesh.model_name][qid] = response
+        response = llm_sesh.prompt(full_prompt, thinking)
+        if response == "":
+            print(f"{llm_sesh.model_name} failed {qid} - {prompt_type}")
+            continue
+
+        llm_responses.setdefault(prompt_type, {})
+        llm_responses[prompt_type][qid] = response
 
 def askQuestions():
     with open(QUESTIONS_JSON_FILE, "r") as questionFile:
-        questions_dict = json.load(questionFile)
+        questions_data = json.load(questionFile)
 
-    if not questions_dict: 
+    if not questions_data: 
         print(f"No question file provided. Exiting")
         exit(1)
 
     questions = []
-    for questionData in questions_dict:
+    for question_data in questions_data:
 
-        qid = questionData["id"]
-        question = questionData["question"]
-        choices = questionData["choices"]
+        qid = question_data["id"]
+        questionStr = question_data["question"]
+        choices = question_data["choices"]
 
         for i, choice in enumerate(choices):
-            question += f"\n{i + 1}) {choice}"
+            questionStr += f"\n{i + 1}) {choice}"
 
-        questions.append((qid, question))
-        
+        questions.append((qid, questionStr))
+
     for model in MODEL_LIST:
         llm_sesh = LLMSession(model, True)
+        llm_responses = {prompt_type: {} for prompt_type in PROMPT_PREFIXES}
 
-        for qid, question in questions:
-
+        for qid, questionStr in questions:
             print(f"LLM: {llm_sesh.model_name}, question: {qid}")
-            getResponse(qid, question, llm_sesh)
+            getResponse(qid, questionStr, llm_sesh, llm_responses)
 
+        saveResponses(model, llm_responses)
         llm_sesh.end()
+        time.sleep(3)
     
 def main():
     init()
     askQuestions()
-    saveResponses()
     
 if __name__ == "__main__": main()
