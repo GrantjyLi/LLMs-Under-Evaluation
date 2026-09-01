@@ -1,7 +1,10 @@
 import ollama
+import time
 
 """Represents one loaded Ollama model. Supports multiple instances at once."""
 class LLMSession:
+    NUM_PROMPT_ATTEMPTS = 3
+    MAX_TOKENS = 128
 
     def __init__(self, model_name: str, pull_if_missing: bool = True):
         self.model_name = model_name
@@ -25,16 +28,39 @@ class LLMSession:
         print(f"'{self.model_name}' loaded.")
         print("==================================================\n")
 
-    def prompt(self, text: str) -> str:
-        response = ollama.generate(
-            model=self.model_name, 
-            prompt=text, 
-            keep_alive=-1,
-            options={
-                "num_predict": 256
-            }
-        )
-        return response["response"]
+    def prompt(self, text: str, thinking: bool = True) -> str:
+        options = {"num_predict": -1}
+        if thinking: options["num_predict"] = self.MAX_TOKENS
+
+        for attempt in range(self.NUM_PROMPT_ATTEMPTS):
+            try:
+                response = ollama.chat(
+                    model=self.model_name,
+                    messages=[
+                        {
+                            "role": "user",
+                            "content": text
+                        }
+                    ],
+                    keep_alive=-1,
+                    think=thinking
+                    # options=options
+                )
+
+                # answer = response.get("response", "").strip()
+                answer = response.message.content.strip()
+
+                if answer:
+                    return answer
+                print(f"Empty response (attempt {attempt + 1})")
+                print(response)
+
+            except Exception as e:
+                print(f"Generation error (attempt {attempt + 1}): {e}")
+
+            time.sleep(1)
+
+        return ""
 
     def end(self):
         ollama.generate(model=self.model_name, prompt="", keep_alive=0)
