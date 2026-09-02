@@ -15,19 +15,17 @@ import re
 from pathlib import Path
 import pandas as pd
 
-RESPONSES_DIR = Path("Responses_cleaned")
-OUTPUT_DIR = Path("Analysis")
+RESPONSES_DIR = Path("Responses_Cleaned")
+QUESTIONS_DIR = Path("Question_Data")
+OUTPUT_DIR = Path("Analysis_Results")
 
+QUESTION_FILE = "questions_json.json"
 PROMPT_FILES = {
     "casual": "casual.json",
     "casual_explain": "casual_explain.json",
     "evaluation": "evaluation.json",
     "evaluation_explain": "evaluation_explain.json",
 }
-
-def load_json(path):
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
 
 def normalize_answer(response):
     if response is None:
@@ -40,6 +38,22 @@ def normalize_answer(response):
     match = re.search(r"(?<!\d)([1-9]\d*)(?!\d)", text)
     return match.group(1) if match else None
 
+def load_answer_key():
+    answer_key = {}
+
+    path = QUESTIONS_DIR / QUESTION_FILE
+
+    if not path.exists():
+        raise FileNotFoundError(f"Missing file: {path}")
+
+    with open(path, "r", encoding="utf-8") as f:
+        questions = json.load(f)
+
+    for question in questions:
+        answer_key[question["id"]] = question["answer"]
+    
+    return answer_key
+
 def load_prompt_data():
     data = {}
     for prompt_type, filename in PROMPT_FILES.items():
@@ -48,9 +62,41 @@ def load_prompt_data():
 
         if not path.exists():
             raise FileNotFoundError(f"Missing file: {path}")
-        data[prompt_type] = load_json(path)
+
+        with open(path, "r", encoding="utf-8") as f:
+            data[prompt_type] = json.load(f)
 
     return data
+
+def analyze_accuracy(data):
+    answer_key = load_answer_key()
+    rows = []
+
+    for prompt_type, prompt_data in data.items():
+        for model, answers in prompt_data.items():
+
+            correct = 0
+            total = 0
+
+            for qid, response in answers.items():
+                answer = normalize_answer(response)
+
+                if answer is None:
+                    continue
+
+                total += 1
+                if str(answer) == str(answer_key[int(qid)]):
+                    correct += 1
+
+            rows.append({
+                "model": model,
+                "prompt": prompt_type,
+                "correct": correct,
+                "total": total,
+                "accuracy_%": round(correct / total * 100, 2)
+            })
+
+    return pd.DataFrame(rows)
 
 def analyze_explanation_effect(data):
     rows = []
@@ -158,12 +204,17 @@ def main():
     OUTPUT_DIR.mkdir(exist_ok=True)
     data = load_prompt_data()
 
+    accuracy = analyze_accuracy(data)
     explanation = analyze_explanation_effect(data)
     consistency, changes = analyze_evaluation_consistency(data)
 
+    accuracy.to_csv(OUTPUT_DIR / "answer_accuracy.csv", index=False)
     explanation.to_csv(OUTPUT_DIR / "explanation_effect.csv", index=False)
     consistency.to_csv(OUTPUT_DIR / "evaluation_consistency.csv", index=False)
     changes.to_csv(OUTPUT_DIR / "answer_changes.csv", index=False)
+
+    print("\n=== ANSWER ACCURACY ===")
+    print(accuracy.to_string(index=False))
 
     print("\n=== EFFECT OF ADDING EXPLANATION ===")
     print(explanation.to_string(index=False))
@@ -175,6 +226,7 @@ def main():
     print(changes.to_string(index=False) if not changes.empty else "No answer changes.")
 
     print("\nSaved to Analysis/:")
+    print("  answer_accuracy.csv")
     print("  explanation_effect.csv")
     print("  evaluation_consistency.csv")
     print("  answer_changes.csv")

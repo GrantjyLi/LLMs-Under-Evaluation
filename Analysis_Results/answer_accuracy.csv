@@ -1,0 +1,9 @@
+model,prompt,correct,total,accuracy_%
+qwen3:0.6b,casual,65,100,65.0
+qwen3:1.7b,casual,83,100,83.0
+qwen3:0.6b,casual_explain,77,100,77.0
+qwen3:1.7b,casual_explain,93,100,93.0
+qwen3:0.6b,evaluation,67,100,67.0
+qwen3:1.7b,evaluation,80,100,80.0
+qwen3:0.6b,evaluation_explain,74,100,74.0
+qwen3:1.7b,evaluation_explain,93,100,93.0
