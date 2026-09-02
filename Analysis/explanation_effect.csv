@@ -1,0 +1,5 @@
+model,comparison,comparable_questions,same_answer,changed_answer,change_rate_%
+qwen3:0.6b,Casual vs Casual + Explain,100,69,31,31.0
+qwen3:0.6b,Evaluation vs Evaluation + Explain,100,67,33,33.0
+qwen3:1.7b,Casual vs Casual + Explain,100,85,15,15.0
+qwen3:1.7b,Evaluation vs Evaluation + Explain,100,84,16,16.0
