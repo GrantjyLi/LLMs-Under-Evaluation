@@ -1,3 +1,15 @@
+"""
+accuracy goals:
+- overall accuracy for each category
+
+- effect of the prompt --> accuracy: 
+  - casual vs casual explain
+  - evaluation vs evaluation explain
+
+  - CONSISTENCY --> change in answer:
+    - casual vs evaluation
+    - casual explain vs evaulation explain
+"""
 import json
 
 QUESTIONS_JSON_FILE = "Question_Data/questions_json.json"
