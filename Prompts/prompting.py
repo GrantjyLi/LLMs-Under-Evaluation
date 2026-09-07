@@ -21,24 +21,19 @@ PROMPT_PREFIXES = {
 PROMPT_SUFFIX = "Answer starting with the answer number. Be as concise as possible, no extra formatting or bullet points."
 
 MODEL_LIST = [
-    # "qwen3:0.6b",
-    # "qwen3:1.7b",
-    # "qwen3.5:0.8b",
-    # "qwen3.5:2b"
-]
-
-MODEL_LIST = [
-    "granite4:3b",
-    "granite4:1b",
-    "granite4:350m"
+    # "granite4:3b",
+    # "granite4:1b",
+    # "granite4:350m"
+    "llama3.2:1b",
+    "llama3.2:3b"
 ]
 
 
 def init():
     os.makedirs(RESPONSE_DIR, exist_ok=True)
 
-"""Saves each LLM's response in its own file while preserving the existing JSON structure."""
 def saveResponses(model_name, llm_responses):
+    """Save new responses while preserving response data for other models."""
     for response_type, response_data in llm_responses.items():
         file_path = os.path.join(RESPONSE_DIR, f"{response_type}.json")
         existing_data = {}
@@ -51,8 +46,7 @@ def saveResponses(model_name, llm_responses):
                 existing_data = {}
 
         if response_data:
-            existing_data.setdefault(model_name, {})
-            existing_data[model_name].update(response_data)
+            existing_data[model_name] = response_data
 
         with open(file_path, "w", encoding="utf-8") as f:
             json.dump(existing_data, f, indent=4, ensure_ascii=False)
