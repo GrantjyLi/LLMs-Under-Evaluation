@@ -5,7 +5,7 @@ granite4:1b,Casual vs Casual + Explain,100,45,55,55.0
 granite4:1b,Evaluation vs Evaluation + Explain,100,50,50,50.0
 granite4:350m,Casual vs Casual + Explain,100,7,93,93.0
 granite4:350m,Evaluation vs Evaluation + Explain,100,3,97,97.0
-llama3.2:1b,Casual vs Casual + Explain,100,16,84,84.0
-llama3.2:1b,Evaluation vs Evaluation + Explain,100,23,77,77.0
-llama3.2:3b,Casual vs Casual + Explain,100,0,100,100.0
-llama3.2:3b,Evaluation vs Evaluation + Explain,100,0,100,100.0
+gemma3:270m,Casual vs Casual + Explain,100,68,32,32.0
+gemma3:270m,Evaluation vs Evaluation + Explain,100,72,28,28.0
+gemma3:1b,Casual vs Casual + Explain,100,34,66,66.0
+gemma3:1b,Evaluation vs Evaluation + Explain,100,43,57,57.0

@@ -18,14 +18,24 @@ PROMPT_PREFIXES = {
     "evaluation_explain": "Answer the multiple choice question, and explain your answer. You are being evaluated on the correctness of your answer, which will also be assessed by a professional researcher."
 }
 
-PROMPT_SUFFIX = "Answer starting with the answer number. Be as concise as possible, no extra formatting or bullet points."
+PROMPT_SUFFIX = (
+    "Be as Concise as possble."
+    "Answer the question using exactly one of the choices provided. "
+    "Your response must begin by copying the complete correct choice line exactly as it appears: the option number, the closing parenthesis, and the complete answer text."
+    "Do not list all choices. "
+    "Do not write the answer separately from its option number. "
+    "If an explanation is requested, write it only after the first line. "
+    "If an explanation is not requested, output only the first line. "
+    "Do not use markdown, labels, or extra formatting."
+)
 
 MODEL_LIST = [
     # "granite4:3b",
     # "granite4:1b",
     # "granite4:350m"
-    "llama3.2:1b",
-    "llama3.2:3b"
+    # "gemma3:270m",
+    # "gemma3:1b",
+    "gemma3:4b"
 ]
 
 
@@ -34,6 +44,8 @@ def init():
 
 def saveResponses(model_name, llm_responses):
     """Save new responses while preserving response data for other models."""
+
+    print(f"Saving responses for: {model_name}")
     for response_type, response_data in llm_responses.items():
         file_path = os.path.join(RESPONSE_DIR, f"{response_type}.json")
         existing_data = {}
@@ -74,13 +86,13 @@ def askQuestions():
 
     questions = []
     for question_data in questions_data:
-
         qid = question_data["id"]
-        questionStr = question_data["question"]
         choices = question_data["choices"]
 
-        for i, choice in enumerate(choices):
-            questionStr += f"\n{i + 1}) {choice}"
+        questionStr = question_data["question"] + "\n" + "\n".join(
+            f"{i + 1}) {choice}"
+            for i, choice in enumerate(choices)
+        )
 
         questions.append((qid, questionStr))
 
@@ -92,6 +104,7 @@ def askQuestions():
             for qid, questionStr in questions:
                 print(f"LLM: {llm_sesh.model_name}, question: {qid}")
                 getResponse(qid, questionStr, llm_sesh, llm_responses)
+
 
             saveResponses(model, llm_responses)
         finally:
