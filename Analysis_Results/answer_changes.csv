@@ -1,43 +1,406 @@
 model,comparison,question_id,first_answer,second_answer
-qwen3:0.6b,Casual vs Evaluation,4,3,4
-qwen3:0.6b,Casual vs Evaluation,8,1,2
-qwen3:0.6b,Casual vs Evaluation,12,2,3
-qwen3:0.6b,Casual vs Evaluation,25,4,1
-qwen3:0.6b,Casual vs Evaluation,29,2,1
-qwen3:0.6b,Casual vs Evaluation,44,3,2
-qwen3:0.6b,Casual vs Evaluation,49,2,3
-qwen3:0.6b,Casual vs Evaluation,55,2,1
-qwen3:0.6b,Casual vs Evaluation,56,2,1
-qwen3:0.6b,Casual vs Evaluation,66,2,1
-qwen3:0.6b,Casual vs Evaluation,75,3,2
-qwen3:0.6b,Casual vs Evaluation,78,1,3
-qwen3:0.6b,Casual vs Evaluation,88,4,2
-qwen3:0.6b,Casual vs Evaluation,99,4,1
-qwen3:0.6b,Casual + Explain vs Evaluation + Explain,3,3,1
-qwen3:0.6b,Casual + Explain vs Evaluation + Explain,7,4,2
-qwen3:0.6b,Casual + Explain vs Evaluation + Explain,8,2,3
-qwen3:0.6b,Casual + Explain vs Evaluation + Explain,11,2,1
-qwen3:0.6b,Casual + Explain vs Evaluation + Explain,12,1,2
-qwen3:0.6b,Casual + Explain vs Evaluation + Explain,17,2,3
-qwen3:0.6b,Casual + Explain vs Evaluation + Explain,20,1,3
-qwen3:0.6b,Casual + Explain vs Evaluation + Explain,23,4,3
-qwen3:0.6b,Casual + Explain vs Evaluation + Explain,29,1,4
-qwen3:0.6b,Casual + Explain vs Evaluation + Explain,36,1,3
-qwen3:0.6b,Casual + Explain vs Evaluation + Explain,38,1,3
-qwen3:0.6b,Casual + Explain vs Evaluation + Explain,43,3,2
-qwen3:0.6b,Casual + Explain vs Evaluation + Explain,46,3,1
-qwen3:0.6b,Casual + Explain vs Evaluation + Explain,57,3,4
-qwen3:0.6b,Casual + Explain vs Evaluation + Explain,73,2,1
-qwen3:0.6b,Casual + Explain vs Evaluation + Explain,77,1,4
-qwen3:0.6b,Casual + Explain vs Evaluation + Explain,81,2,1
-qwen3:0.6b,Casual + Explain vs Evaluation + Explain,99,1,4
-qwen3:0.6b,Casual + Explain vs Evaluation + Explain,100,3,1
-qwen3:1.7b,Casual vs Evaluation,8,3,4
-qwen3:1.7b,Casual vs Evaluation,20,3,2
-qwen3:1.7b,Casual vs Evaluation,72,3,4
-qwen3:1.7b,Casual vs Evaluation,77,2,4
-qwen3:1.7b,Casual vs Evaluation,96,4,2
-qwen3:1.7b,Casual vs Evaluation,99,1,3
-qwen3:1.7b,Casual + Explain vs Evaluation + Explain,1,2,4
-qwen3:1.7b,Casual + Explain vs Evaluation + Explain,77,1,2
-qwen3:1.7b,Casual + Explain vs Evaluation + Explain,99,1,3
+granite4:3b,Casual vs Evaluation,2,3,3)
+granite4:3b,Casual vs Evaluation,3,4) The Ural Mountains,4
+granite4:3b,Casual vs Evaluation,4,3) Iraq,3
+granite4:3b,Casual vs Evaluation,8,3,3) Kazakhstan
+granite4:3b,Casual vs Evaluation,14,2),2
+granite4:3b,Casual vs Evaluation,16,3) Ethiopia,3
+granite4:3b,Casual vs Evaluation,20,2) Vatican City,2
+granite4:3b,Casual vs Evaluation,21,3) Venus,3
+granite4:3b,Casual vs Evaluation,24,4),4
+granite4:3b,Casual vs Evaluation,25,1) Nitrogen,1
+granite4:3b,Casual vs Evaluation,29,1,1) Diamond
+granite4:3b,Casual vs Evaluation,30,1,1) 206
+granite4:3b,Casual vs Evaluation,31,2) Albert Einstein,2
+granite4:3b,Casual vs Evaluation,32,1,1) 7.0
+granite4:3b,Casual vs Evaluation,35,3,3) Electron
+granite4:3b,Casual vs Evaluation,39,2) Exosphere,2
+granite4:3b,Casual vs Evaluation,41,1),1
+granite4:3b,Casual vs Evaluation,47,4),4
+granite4:3b,Casual vs Evaluation,48,2) The scientist who creates the monster,2
+granite4:3b,Casual vs Evaluation,49,3) Antonio Vivaldi,3
+granite4:3b,Casual vs Evaluation,50,3) The Odyssey,3
+granite4:3b,Casual vs Evaluation,51,1) Robert Frost,1
+granite4:3b,Casual vs Evaluation,52,2) Piano,2
+granite4:3b,Casual vs Evaluation,53,2) The Lord of the Rings,2
+granite4:3b,Casual vs Evaluation,59,2) Atlas,2
+granite4:3b,Casual vs Evaluation,64,2),2
+granite4:3b,Casual vs Evaluation,69,4),4
+granite4:3b,Casual vs Evaluation,73,2) Alan Turing,2
+granite4:3b,Casual vs Evaluation,76,1) 0,1
+granite4:3b,Casual vs Evaluation,78,2),2
+granite4:3b,Casual vs Evaluation,79,3) Secure,3
+granite4:3b,Casual vs Evaluation,80,4),4
+granite4:3b,Casual vs Evaluation,84,3),3
+granite4:3b,Casual vs Evaluation,86,1) Love,1
+granite4:3b,Casual vs Evaluation,89,3),3
+granite4:3b,Casual vs Evaluation,91,3),3
+granite4:3b,Casual vs Evaluation,92,2),2
+granite4:3b,Casual vs Evaluation,93,4) France,4
+granite4:3b,Casual vs Evaluation,95,1) Michael Jackson,1
+granite4:3b,Casual vs Evaluation,96,4,2
+granite4:3b,Casual vs Evaluation,98,1),1
+granite4:3b,Casual + Explain vs Evaluation + Explain,1,"2) Accra
+
+Accra is the capital city of Ghana and is located closest to the Prime Meridian (0° longitude) because it lies along the coastline of the Gulf of Guinea, which is near the equator.","2) Accra
+
+Accra is the capital city of Ghana and is located closest to the Prime Meridian (0° longitude) as it lies on the same longitude line. The other cities mentioned have different longitudes."
+granite4:3b,Casual + Explain vs Evaluation + Explain,2,3) Canberra,"3) Canberra. Canberra is the capital of Australia because it was specifically designed as the capital city, unlike the other options which are major cities in different states."
+granite4:3b,Casual + Explain vs Evaluation + Explain,3,"4) The Ural Mountains. They are the primary natural boundary between Europe and Asia, running from the North to the South along the Ural River.","4) The Ural Mountains
+
+The Ural Mountains naturally divide Europe and Asia because they form the continental boundary between these two regions. The Urals are the world's longest mountain range that runs entirely within a single country, Russia, dividing the country into the western European part and the eastern Asian part."
+granite4:3b,Casual + Explain vs Evaluation + Explain,4,3) Iraq,"3) Iraq
+
+Explanation: The ancient city of Babylon was located in present-day Iraq. This is because the historical records and archaeological findings place Babylon in the Mesopotamian region, which is primarily within modern-day Iraq."
+granite4:3b,Casual + Explain vs Evaluation + Explain,5,"2) Alaska. Alaska has the longest coastline due to its extensive size and numerous islands, making it the state with the most coastline.","2) Alaska
+
+Alaska has the longest coastline of the US states, including islands and inlets. This is due to its extensive shoreline along the Pacific Ocean, Arctic Ocean, and the numerous islands in the region."
+granite4:3b,Casual + Explain vs Evaluation + Explain,6,"2) Battle of Midway. This battle marked a turning point as the U.S. Navy defeated the Japanese fleet, resulting in a strategic advantage for the Allies in the Pacific.","2) Battle of Midway. This battle is considered the turning point because the U.S. successfully defeated the Japanese fleet, leading to a strategic advantage for the Allies in the Pacific."
+granite4:3b,Casual + Explain vs Evaluation + Explain,7,"4) Portugal
+
+Portugal was the first European nation to successfully land a ship in India via an ocean route. In 1498, Vasco da Gama led a fleet that reached Calicut (now Kozhikode) in India, marking the beginning of direct European trade with Asia.","4) Portugal
+
+Portugal was the first European nation to successfully land a ship in India via an ocean route. This was achieved by the Portuguese explorer Vasco da Gama in 1498, opening a direct sea route from Europe to India."
+granite4:3b,Casual + Explain vs Evaluation + Explain,8,3,"3) Kazakhstan
+
+Explanation: Kazakhstan is the largest landlocked country in the world by surface area, covering approximately 2,724,900 square kilometers."
+granite4:3b,Casual + Explain vs Evaluation + Explain,9,"3) Augustus
+
+Explanation: Augustus, also known as Octavian, was the first Emperor of the Roman Empire, succeeding the Roman Republic after Julius Caesar's assassination.",3) Augustus
+granite4:3b,Casual + Explain vs Evaluation + Explain,11,"1) 1989. The Berlin Wall fell in November 1989, marking the end of the Cold War era and the beginning of a more peaceful and unified Europe.",1) 1989
+granite4:3b,Casual + Explain vs Evaluation + Explain,12,2) Denmark,"2) Denmark
+
+Explanation: Bryggen, the famous Hanseatic trading hub, was located in the city of Bergen, Norway. The Hanseatic League was a powerful trading organization in Northern Europe, and Bergen served as an important hub for trade between Norway and the rest of Europe. Denmark was a significant member of the Hanseatic League, but the actual location of Bryggen was in Norway, not Denmark, Finland, or Sweden."
+granite4:3b,Casual + Explain vs Evaluation + Explain,14,2) Portuguese,"2) Portuguese
+
+Portuguese is the official language of Brazil. This is because Brazil was a Portuguese colony from the 16th century until the early 19th century, and Portuguese was the language spoken by the colonizers and the ruling classes. Over time, it became the language of administration, education, and national identity."
+granite4:3b,Casual + Explain vs Evaluation + Explain,15,4) Alaska,"4) Alaska
+
+Explanation: Alaska was acquired from Russia in 1867 through the Alaska Purchase, where the United States bought the territory from Russia for $7.2 million. This event is often referred to as the ""Seward's Folly"" because then-Secretary of State William H. Seward paid a relatively low price for such a large area. The other options (Oregon, Montana, Washington) were not acquired from Russia in 1867."
+granite4:3b,Casual + Explain vs Evaluation + Explain,16,3) Ethiopia,"3) Ethiopia
+
+Explanation: Abyssinia is the ancient name for Ethiopia, specifically referring to the region around the city of Axum. The term has been used historically to refer to the country in various contexts, and it is most associated with Ethiopia, not the other listed nations."
+granite4:3b,Casual + Explain vs Evaluation + Explain,18,"3) Treaty of Versailles
+
+The Treaty of Versailles officially ended World War I in 1919. It was signed on June 28, 1919, in the Palace of Versailles, hence the name. This treaty imposed harsh penalties on Germany, which many historians argue contributed to the rise of World War II.",3) Treaty of Versailles
+granite4:3b,Casual + Explain vs Evaluation + Explain,20,2) Vatican City. It is the smallest independent country in the world by both land area and population because it is an independent city-state with a population of around 800 people and a land area of approximately 44 hectares.,"2) Vatican City
+
+Explanation: Vatican City, an independent city-state within Rome, Italy, is the smallest by both land area (0.44 sq km) and population (about 800 people), making it the correct answer."
+granite4:3b,Casual + Explain vs Evaluation + Explain,21,3,"3) Venus
+
+Explanation: Venus has the highest surface temperature due to its thick atmosphere, which causes a runaway greenhouse effect. This leads to extremely high surface temperatures, with an average temperature of around 464 degrees Celsius (867 degrees Fahrenheit)."
+granite4:3b,Casual + Explain vs Evaluation + Explain,22,2) Carbon,"2) Carbon
+
+Explanation: Diamonds and graphite are both allotropes of carbon, which means they are different structural forms of the same element. Carbon is the main chemical element in both."
+granite4:3b,Casual + Explain vs Evaluation + Explain,23,"2) Brain
+
+The brain consumes the largest percentage of the body's total energy budget at rest, as it accounts for about 20-25% of the body's total energy intake, even though it represents only 2% of the body's weight.","2) Brain
+
+Explanation: The human brain consumes the largest percentage of the body's total energy budget at rest, typically around 20-25% of the resting energy intake. It requires a significant amount of energy to maintain its functions, including maintaining consciousness, regulating body temperature, and processing information."
+granite4:3b,Casual + Explain vs Evaluation + Explain,24,"4) The speed of light in a vacuum is approximately 300,000 km/s, as stated by the speed of light constant (c) in physics.",4
+granite4:3b,Casual + Explain vs Evaluation + Explain,26,2) Igneous,"2) Igneous
+
+Explanation: Igneous rocks are formed by the cooling and solidification of molten magma or lava. The other options are not formed in this manner: composite (a type of volcanic rock), metamorphic (formed from the transformation of existing rocks under pressure and heat), and sedimentary (formed from the accumulation of sediments)."
+granite4:3b,Casual + Explain vs Evaluation + Explain,29,"1) Diamond. Diamond is the hardest naturally occurring substance on Earth due to its unique crystalline structure and high carbon atom density, which provides exceptional hardness and strength.","1) Diamond. Diamond is the hardest naturally occurring substance on Earth, with a Mohs hardness of 10. Quartz, topaz, and corundum have lower hardness ratings of 7, 8, and 9, respectively."
+granite4:3b,Casual + Explain vs Evaluation + Explain,30,"1) 206 bones are in the standard adult human body. This is because the human body typically has 206 bones in total, with slight variations between individuals. The count includes 26 bones in the skull, 13 in the upper jaw, 12 in the lower jaw, 5 in the spine (thoracic), 5 in the lumbar spine, 12 in the thoracic rib cage, 5 in the pelvic girdle, and the rest in the limbs.",1) 206
+granite4:3b,Casual + Explain vs Evaluation + Explain,32,"1) 7.0
+
+Explanation: Pure distilled water at 25°C has a neutral pH level of 7.0, as it contains no added acids or bases, and the concentration of hydrogen ions equals the concentration of hydroxide ions.",1) 7.0
+granite4:3b,Casual + Explain vs Evaluation + Explain,33,"4) Gravity. This is because gravity is the force that attracts all objects with mass towards each other, and it is the main force that keeps planets in orbit around the Sun.",4) Gravity
+granite4:3b,Casual + Explain vs Evaluation + Explain,36,"4) O negative
+
+Explanation: O negative blood is the universal red blood cell donor because it does not contain A or B antigens, which means it doesn't trigger an immune response when transfused to patients with any blood type.","4) O negative
+
+O negative blood is known as the universal red blood cell donor because it does not have A or B antigens on the red blood cells, and it is also negative for the Rh factor. This makes it compatible for transfusion to any blood type recipient, including those who are Rh negative."
+granite4:3b,Casual + Explain vs Evaluation + Explain,38,3) Crocodilians,"3) Crocodilians
+
+Explanation: Crocodilians share a common ancestor with birds, as both are part of the larger group of reptiles known as archosaurs. This group also includes dinosaurs, which are the ancestors of birds. Therefore, crocodilians are the closest surviving relatives of birds."
+granite4:3b,Casual + Explain vs Evaluation + Explain,40,"3) Mercury
+
+Mercury has the shortest day because it rotates on its axis the fastest. It completes one full rotation approximately every 58.65 Earth days, which is faster than its orbital period around the Sun (about 88 Earth days).","3) Mercury
+
+Mercury has the shortest day of all planets in our solar system, with a day lasting about 1,408 Earth hours (or about 55 Earth days). This is because it rotates on its axis much faster than any other planet."
+granite4:3b,Casual + Explain vs Evaluation + Explain,42,2) Michelangelo,2) Michelangelo. He painted the famous ceiling of the Sistine Chapel in Rome.
+granite4:3b,Casual + Explain vs Evaluation + Explain,43,3) Denmark,"3) Denmark
+
+In Shakespeare's 'Hamlet', Hamlet is a prince of Denmark. This is evident from the title of the play itself, 'Hamlet, Prince of Denmark'."
+granite4:3b,Casual + Explain vs Evaluation + Explain,44,3) Claude Monet,"3) Claude Monet
+
+Explanation: Claude Monet is the famous impressionist artist who painted the 'Water Lilies' series. The series consists of approximately 250 oil paintings he created during his lifetime, showcasing his interest in water lilies, water lily ponds, and reflections."
+granite4:3b,Casual + Explain vs Evaluation + Explain,45,3) George Orwell,"3) George Orwell
+
+Explanation: George Orwell is the author of the dystopian novel '1984'. He wrote the book in 1949, which is a classic example of dystopian literature, detailing a totalitarian regime's control over its citizens."
+granite4:3b,Casual + Explain vs Evaluation + Explain,46,2) Moby-Dick,"2) Moby-Dick
+
+Explanation: The famous line 'Call me Ishmael' is the opening line of Herman Melville's novel Moby-Dick. This line introduces the narrator, Ishmael, and sets the stage for the epic tale of the white whale."
+granite4:3b,Casual + Explain vs Evaluation + Explain,47,"4
+
+Explanation: 'The Persistence of Memory' is a painting by Salvador Dalí, known for his contributions to the Surrealist movement in art.",4) Salvador Dalí
+granite4:3b,Casual + Explain vs Evaluation + Explain,50,"3) The Odyssey - This epic poem by Homer narrates the adventures and challenges of Odysseus as he journeys back to Ithaca following the Trojan War, making it the correct answer.","3) The Odyssey
+
+The Odyssey is the ancient Greek epic poem that describes Odysseus' long journey home after the Trojan War. It is the central work of the Epic Cycle, a group of Greek epic poems that narrate the myths and legends of ancient Greece, particularly those surrounding the Trojan War."
+granite4:3b,Casual + Explain vs Evaluation + Explain,53,2) The Lord of the Rings. This series is set in the fictional world of Middle-earth and was written by J.R.R. Tolkien.,"2) The Lord of the Rings
+
+The Lord of the Rings is the correct answer because it is the epic fantasy series written by J.R.R. Tolkien, specifically The Fellowship of the Ring, The Two Towers, and The Return of the King, set in the fictional world of Middle-earth."
+granite4:3b,Casual + Explain vs Evaluation + Explain,55,"1) Charlotte Brontë. Charlotte Brontë, a prolific Victorian novelist, wrote 'Jane Eyre' using the pen name Currer Bell.",1) Charlotte Brontë
+granite4:3b,Casual + Explain vs Evaluation + Explain,56,"1) Baroque. This period was marked by elaborate ornamentation, complex counterpoint, and the use of basso continuo. Composers like Bach, Handel, and Vivaldi are key figures in this era.",1) Baroque
+granite4:3b,Casual + Explain vs Evaluation + Explain,57,4,4) Huckleberry Finn
+granite4:3b,Casual + Explain vs Evaluation + Explain,60,"4) Carmen. The aria 'Habanera' is a famous piece from the opera ""Carmen"" by Georges Bizet.",4) Carmen
+granite4:3b,Casual + Explain vs Evaluation + Explain,61,4) Prime number. A prime number is a number greater than 1 that has no positive divisors other than 1 and itself.,4) Prime number
+granite4:3b,Casual + Explain vs Evaluation + Explain,63,4,4) 12
+granite4:3b,Casual + Explain vs Evaluation + Explain,64,"2) 1010
+
+Explanation: The binary number 1010 is equivalent to the decimal number 10 because it represents 1*2^3 + 0*2^2 + 1*2^1 + 0*2^0 = 8 + 0 + 2 + 0 = 10.","2) 1010
+
+Explanation: In binary numbering system, each digit represents a power of 2, starting from the rightmost digit which represents 2^0. So, 1010 in binary is equivalent to 1*2^3 + 0*2^2 + 1*2^1 + 0*2^0 = 8 + 0 + 2 + 0 = 10 in decimal."
+granite4:3b,Casual + Explain vs Evaluation + Explain,65,"2) 180 degrees
+
+In a triangle, the sum of the interior angles is always 180 degrees due to the triangle angle sum theorem, which states that the sum of the measures of the angles in a triangle is equal to 180 degrees.",2) 180 degrees. The sum of interior angles of any triangle is always 180 degrees due to the triangle angle sum theorem.
+granite4:3b,Casual + Explain vs Evaluation + Explain,67,"4) 120
+
+Explanation: The factorial of a number n, denoted as n!, is the product of all positive integers less than or equal to n. Therefore, 5! = 5 × 4 × 3 × 2 × 1 = 120.",4
+granite4:3b,Casual + Explain vs Evaluation + Explain,68,"2) Hypertext Transfer Protocol. HTTP is the protocol used for transferring data on the World Wide Web, enabling communication between a web browser and a server.",2) Hypertext Transfer Protocol
+granite4:3b,Casual + Explain vs Evaluation + Explain,69,4) Octagon,"4) Octagon
+
+An octagon is a polygon with eight sides of equal length, which matches the description provided in the question."
+granite4:3b,Casual + Explain vs Evaluation + Explain,70,4,4) Pythagoras
+granite4:3b,Casual + Explain vs Evaluation + Explain,71,"2) Temporary short-term memory
+
+RAM, or Random Access Memory, is used for temporary storage of data that the computer is currently working on. It is volatile, meaning it loses its contents when the power is turned off. This contrasts with other types of memory like hard drives (for permanent long-term storage), network adapters (for network connectivity), or GPUs (for graphic processing).",2) Temporary short-term memory
+granite4:3b,Casual + Explain vs Evaluation + Explain,72,3) 12,3
+granite4:3b,Casual + Explain vs Evaluation + Explain,73,"2) Alan Turing
+
+Explanation: Alan Turing is widely recognized as the father of modern computer science and artificial intelligence due to his theoretical work on the Turing machine and his contributions to the field of computation. His work laid the foundation for the development of computers and the field of artificial intelligence.","2) Alan Turing
+
+Alan Turing is widely considered the father of modern computer science and artificial intelligence due to his theoretical work on algorithms and machine computation, particularly the concept of a universal machine (Turing Machine), which laid the groundwork for modern computing and AI."
+granite4:3b,Casual + Explain vs Evaluation + Explain,74,"4) Pi (π)
+
+Explanation: Pi is the mathematical constant that represents the ratio of a circle's circumference to its diameter.","4) Pi (π)
+
+Explanation: Pi (π) is the mathematical constant that represents the ratio of a circle's circumference to its diameter. This is a fundamental concept in geometry, where the ratio is constant for all circles. The value of Pi is approximately 3.14159. The other options (Tau, Golden ratio, and Euler's number) are different mathematical constants with different applications and values."
+granite4:3b,Casual + Explain vs Evaluation + Explain,75,3) Queue,"3) Queue
+
+A queue is a data structure that operates on a First-In, First-Out (FIFO) basis, meaning that the first item added to the queue will be the first one to be removed. This is in contrast to a stack, which operates on a Last-In, First-Out (LIFO) basis. Trees, graphs, and other structures do not necessarily follow a FIFO basis."
+granite4:3b,Casual + Explain vs Evaluation + Explain,81,4,"4) 11
+
+Explanation: In a standard soccer match, each team is allowed to have 11 players on the field at any given time. This includes the goalkeeper, who is the only player allowed to handle the ball within their own penalty area. The other 10 players are outfield players who can move around the field during the match."
+granite4:3b,Casual + Explain vs Evaluation + Explain,84,3,"3) Brazil. 
+
+Brazil hosted the Summer Olympic Games in 2016 due to its application being selected by the International Olympic Committee during the 125th IOC Session in Barcelona, Spain, in 2013. The decision was based on a fair and transparent process, and Brazil was the only country that applied for the right to host the Games in its time zone."
+granite4:3b,Casual + Explain vs Evaluation + Explain,85,2) Vincent van Gogh,"2
+
+Vincent van Gogh painted 'The Starry Night' while staying at the Saint-Paul-de-Mausole asylum in Saint-Rémy-de-Provence."
+granite4:3b,Casual + Explain vs Evaluation + Explain,87,3) The Beatles,"3) The Beatles
+
+Explanation: 'Abbey Road' is a critically acclaimed album released by the British band The Beatles in 1969. The album is notable for its innovative use of studio technology and its exploration of new musical styles."
+granite4:3b,Casual + Explain vs Evaluation + Explain,88,"4) 26.2 miles. This is the standard distance of a full marathon, as established by the International Association of Athletics Federations (IAAF).","4
+
+The standard distance of a full marathon is 26.2 miles. This is a commonly accepted distance for running competitions worldwide and has been established by the International Association of Athletics Federations (IAAF)."
+granite4:3b,Casual + Explain vs Evaluation + Explain,89,3,3) The correct answer is 3. SpongeBob SquarePants. SpongeBob lives in a pineapple under the sea.
+granite4:3b,Casual + Explain vs Evaluation + Explain,90,3) 3 points. A successful field goal made from beyond the designated arc (also known as the three-point line) is worth 3 points in basketball.,"3
+
+Explanation: In basketball, a successful field goal made from beyond the designated arc (the three-point line) is worth 3 points. This is because it is considered a more challenging shot, hence the higher point value."
+granite4:3b,Casual + Explain vs Evaluation + Explain,92,"2) Emmy
+
+The Emmy award is given annually to recognize excellence in US television broadcasting.",2) Emmy
+granite4:3b,Casual + Explain vs Evaluation + Explain,94,1) Quentin Tarantino. He is the director of 'Pulp Fiction'.,1) Quentin Tarantino
+granite4:3b,Casual + Explain vs Evaluation + Explain,96,"4) Blue, Black, Red","2) Red, Green, Blue"
+granite4:3b,Casual + Explain vs Evaluation + Explain,97,"4) Basketball. A 'slam dunk' is a move in basketball where a player jumps and brings both hands above the rim while the ball is in their hand, then lowers the ball forcefully through the hoop. This term does not apply to other sports listed.","4) Basketball
+
+Explanation: A 'slam dunk' is a term used in basketball where a player jumps and forcefully throws the ball down through the basket with the hands above the rim. This term does not apply to the other sports listed."
+granite4:3b,Casual + Explain vs Evaluation + Explain,99,"1) 10
+
+Explanation: In a single frame of bowling, the maximum score achievable without striking twice or throwing a spare is 10, which is the score for bowling a perfect strike in the first throw of a frame.",1
+granite4:3b,Casual + Explain vs Evaluation + Explain,100,3,3) The Legend of Zelda
+granite4:1b,Casual vs Evaluation,1,2,4
+granite4:1b,Casual vs Evaluation,11,1,2
+granite4:1b,Casual vs Evaluation,37,3) Ohm,3
+granite4:1b,Casual vs Evaluation,42,2) Michelangelo,2
+granite4:1b,Casual vs Evaluation,45,3) George Orwell,3
+granite4:1b,Casual vs Evaluation,49,3) Antonio Vivaldi,3
+granite4:1b,Casual vs Evaluation,51,1) Robert Frost,1
+granite4:1b,Casual vs Evaluation,65,2) 180 degrees,2
+granite4:1b,Casual vs Evaluation,79,3) Secure,3
+granite4:1b,Casual vs Evaluation,81,4,3
+granite4:1b,Casual vs Evaluation,99,1,2
+granite4:1b,Casual + Explain vs Evaluation + Explain,1,2,2) Accra
+granite4:1b,Casual + Explain vs Evaluation + Explain,3,3,3) The Caucasus Mountains
+granite4:1b,Casual + Explain vs Evaluation + Explain,6,2) Battle of Midway,2
+granite4:1b,Casual + Explain vs Evaluation + Explain,7,4,4) Portugal
+granite4:1b,Casual + Explain vs Evaluation + Explain,11,2,1) 1989
+granite4:1b,Casual + Explain vs Evaluation + Explain,14,2,2) Portuguese
+granite4:1b,Casual + Explain vs Evaluation + Explain,16,3) Ethiopia,3
+granite4:1b,Casual + Explain vs Evaluation + Explain,20,2) Vatican City,2
+granite4:1b,Casual + Explain vs Evaluation + Explain,22,2) Carbon,2
+granite4:1b,Casual + Explain vs Evaluation + Explain,23,2,3
+granite4:1b,Casual + Explain vs Evaluation + Explain,24,1,"4) 300,000 km/s"
+granite4:1b,Casual + Explain vs Evaluation + Explain,25,1) Nitrogen,1
+granite4:1b,Casual + Explain vs Evaluation + Explain,26,2,2) Igneous
+granite4:1b,Casual + Explain vs Evaluation + Explain,29,1) Diamond,1
+granite4:1b,Casual + Explain vs Evaluation + Explain,34,4,4) Omnivores
+granite4:1b,Casual + Explain vs Evaluation + Explain,39,1) Thermosphere,1
+granite4:1b,Casual + Explain vs Evaluation + Explain,41,1) Leo Tolstoy,1
+granite4:1b,Casual + Explain vs Evaluation + Explain,42,2) Michelangelo,2
+granite4:1b,Casual + Explain vs Evaluation + Explain,43,3,3) Denmark
+granite4:1b,Casual + Explain vs Evaluation + Explain,49,3) Antonio Vivaldi,3
+granite4:1b,Casual + Explain vs Evaluation + Explain,52,2,2) Piano
+granite4:1b,Casual + Explain vs Evaluation + Explain,59,2) Atlas,2
+granite4:1b,Casual + Explain vs Evaluation + Explain,61,4) Prime number,4
+granite4:1b,Casual + Explain vs Evaluation + Explain,64,2) 1010,2
+granite4:1b,Casual + Explain vs Evaluation + Explain,66,1) Python,1
+granite4:1b,Casual + Explain vs Evaluation + Explain,72,3) 12,3
+granite4:1b,Casual + Explain vs Evaluation + Explain,73,2) Alan Turing,2
+granite4:1b,Casual + Explain vs Evaluation + Explain,82,4) Roma,2) Parasite
+granite4:1b,Casual + Explain vs Evaluation + Explain,90,1) 4 points,2
+granite4:1b,Casual + Explain vs Evaluation + Explain,92,2) Emmy,2
+granite4:1b,Casual + Explain vs Evaluation + Explain,98,1) Arthur Conan Doyle,1
+granite4:1b,Casual + Explain vs Evaluation + Explain,99,1,2
+granite4:350m,Casual vs Evaluation,1,4,3
+granite4:350m,Casual vs Evaluation,2,2,4
+granite4:350m,Casual vs Evaluation,3,2,4
+granite4:350m,Casual vs Evaluation,4,4,2
+granite4:350m,Casual vs Evaluation,6,3,2
+granite4:350m,Casual vs Evaluation,7,Answer: 1) England,3
+granite4:350m,Casual vs Evaluation,9,1) Julius Caesar,3
+granite4:350m,Casual vs Evaluation,12,3,4
+granite4:350m,Casual vs Evaluation,15,3,4
+granite4:350m,Casual vs Evaluation,16,3,1
+granite4:350m,Casual vs Evaluation,17,2,3
+granite4:350m,Casual vs Evaluation,18,4,3
+granite4:350m,Casual vs Evaluation,19,4) Phnom Penh,3
+granite4:350m,Casual vs Evaluation,20,2) Vatican City,2
+granite4:350m,Casual vs Evaluation,23,1) Kidneys,3
+granite4:350m,Casual vs Evaluation,24,"4) 300,000 km/s",3
+granite4:350m,Casual vs Evaluation,27,1) Fe,2
+granite4:350m,Casual vs Evaluation,28,3) Golgi apparatus,2
+granite4:350m,Casual vs Evaluation,31,2) Albert Einstein,2
+granite4:350m,Casual vs Evaluation,32,2,5
+granite4:350m,Casual vs Evaluation,35,2,3
+granite4:350m,Casual vs Evaluation,36,Answer 2: A positive,3
+granite4:350m,Casual vs Evaluation,37,2) Ampere,3
+granite4:350m,Casual vs Evaluation,41,1) Leo Tolstoy,2
+granite4:350m,Casual vs Evaluation,42,1) Leonardo da Vinci,3
+granite4:350m,Casual vs Evaluation,43,4,3
+granite4:350m,Casual vs Evaluation,45,3,1
+granite4:350m,Casual vs Evaluation,47,2,4
+granite4:350m,Casual vs Evaluation,48,4) The monster created from corpses,4
+granite4:350m,Casual vs Evaluation,49,4) Johann Sebastian Bach,1
+granite4:350m,Casual vs Evaluation,51,3,4
+granite4:350m,Casual vs Evaluation,52,3,2
+granite4:350m,Casual vs Evaluation,53,2) The Lord of the Rings,2
+granite4:350m,Casual vs Evaluation,54,4,2
+granite4:350m,Casual vs Evaluation,55,4,1
+granite4:350m,Casual vs Evaluation,56,3,4
+granite4:350m,Casual vs Evaluation,57,Answer: 3) Jim,4
+granite4:350m,Casual vs Evaluation,58,3,4
+granite4:350m,Casual vs Evaluation,60,3,2
+granite4:350m,Casual vs Evaluation,61,3,2
+granite4:350m,Casual vs Evaluation,62,4) Central Processing Unit,2
+granite4:350m,Casual vs Evaluation,64,2,4
+granite4:350m,Casual vs Evaluation,65,Answer: 180 degrees,3
+granite4:350m,Casual vs Evaluation,66,1) Python,3
+granite4:350m,Casual vs Evaluation,67,Answer: 120,4
+granite4:350m,Casual vs Evaluation,71,1,3
+granite4:350m,Casual vs Evaluation,73,Answer: 1) Charles Babbage,2
+granite4:350m,Casual vs Evaluation,74,4,2
+granite4:350m,Casual vs Evaluation,75,3,2
+granite4:350m,Casual vs Evaluation,76,2) 1,4
+granite4:350m,Casual vs Evaluation,77,2) Android Inc.,2
+granite4:350m,Casual vs Evaluation,80,2) Undefined,4
+granite4:350m,Casual vs Evaluation,81,4,3
+granite4:350m,Casual vs Evaluation,82,4) Roma,2
+granite4:350m,Casual vs Evaluation,83,1,3
+granite4:350m,Casual vs Evaluation,84,3,4
+granite4:350m,Casual vs Evaluation,85,4,3
+granite4:350m,Casual vs Evaluation,87,3) The Beatles,3
+granite4:350m,Casual vs Evaluation,88,2,4
+granite4:350m,Casual vs Evaluation,90,4 points,3
+granite4:350m,Casual vs Evaluation,91,Answer: 2) Superman,3
+granite4:350m,Casual vs Evaluation,94,1) Quentin Tarantino,1
+granite4:350m,Casual vs Evaluation,95,1) Michael Jackson,4
+granite4:350m,Casual vs Evaluation,97,1,4
+granite4:350m,Casual vs Evaluation,98,3) Edgar Allan Poe,3
+granite4:350m,Casual vs Evaluation,99,4,3
+granite4:350m,Casual vs Evaluation,100,3) The Legend of Zelda,3
+granite4:350m,Casual + Explain vs Evaluation + Explain,2,1) Melbourne,Answer: 4) Brisbane.
+granite4:350m,Casual + Explain vs Evaluation + Explain,3,4,2) The Carpathian Mountains
+granite4:350m,Casual + Explain vs Evaluation + Explain,5,4) California,3) Hawaii
+granite4:350m,Casual + Explain vs Evaluation + Explain,7,3) The Netherlands,1) England
+granite4:350m,Casual + Explain vs Evaluation + Explain,8,3) Kazakhstan,3
+granite4:350m,Casual + Explain vs Evaluation + Explain,9,Answer: 1) Julius Caesar,1) Julius Caesar
+granite4:350m,Casual + Explain vs Evaluation + Explain,10,Answer: 3) Amazon.,3) Amazon
+granite4:350m,Casual + Explain vs Evaluation + Explain,11,Answer: 4) 1993,Answer: 1991.
+granite4:350m,Casual + Explain vs Evaluation + Explain,12,4) Sweden,3) Finland
+granite4:350m,Casual + Explain vs Evaluation + Explain,14,4) Spanish,4) Spanish.
+granite4:350m,Casual + Explain vs Evaluation + Explain,15,3) Washington,4) Alaska
+granite4:350m,Casual + Explain vs Evaluation + Explain,16,Answer: 3) Ethiopia,3) Ethiopia
+granite4:350m,Casual + Explain vs Evaluation + Explain,17,2) Adriatic Sea,Answer: 2) Adriatic Sea
+granite4:350m,Casual + Explain vs Evaluation + Explain,18,3) Treaty of Versailles,"Answer: 2) Treaty of Ghent
+Explanation: The Treaty of Ghent, signed on December 25, 1815, officially ended World War I in 1919."
+granite4:350m,Casual + Explain vs Evaluation + Explain,19,3) Da Nang,4) Phnom Penh
+granite4:350m,Casual + Explain vs Evaluation + Explain,20,The smallest independent country by both land area and population is 2) Vatican City.,Answer: 3) San Marino
+granite4:350m,Casual + Explain vs Evaluation + Explain,21,3) Venus,2) Mercury.
+granite4:350m,Casual + Explain vs Evaluation + Explain,22,4) Silicon,Answer: Carbon
+granite4:350m,Casual + Explain vs Evaluation + Explain,23,2) Brain,3) Heart
+granite4:350m,Casual + Explain vs Evaluation + Explain,24,"Answer: 3,000,000 km/s","4) 300,000 km/s"
+granite4:350m,Casual + Explain vs Evaluation + Explain,25,1) Nitrogen,3) Argon
+granite4:350m,Casual + Explain vs Evaluation + Explain,27,4) Ag,Answer: 3) Pb
+granite4:350m,Casual + Explain vs Evaluation + Explain,28,3) Golgi apparatus.,Answer: 4) Chloroplast
+granite4:350m,Casual + Explain vs Evaluation + Explain,29,Answer: 4) Corundum,3) Topaz
+granite4:350m,Casual + Explain vs Evaluation + Explain,30,3,Answer: 206 bones
+granite4:350m,Casual + Explain vs Evaluation + Explain,32,2) 5.0,3) 8.5
+granite4:350m,Casual + Explain vs Evaluation + Explain,33,2) Electromagnetic force,4) Gravity
+granite4:350m,Casual + Explain vs Evaluation + Explain,34,4) Omnivores,1
+granite4:350m,Casual + Explain vs Evaluation + Explain,35,4) Proton.,1) Neutron
+granite4:350m,Casual + Explain vs Evaluation + Explain,36,3,4) O negative
+granite4:350m,Casual + Explain vs Evaluation + Explain,37,4) Volt,3) Ohm
+granite4:350m,Casual + Explain vs Evaluation + Explain,38,4) Amphibians,3
+granite4:350m,Casual + Explain vs Evaluation + Explain,39,2,2) Exosphere
+granite4:350m,Casual + Explain vs Evaluation + Explain,40,Answer: 1) Saturn.,4) Jupiter
+granite4:350m,Casual + Explain vs Evaluation + Explain,41,2) Ivan Turgenev,Answer: 1) Leo Tolstoy
+granite4:350m,Casual + Explain vs Evaluation + Explain,42,2) Michelangelo,3) Raphael
+granite4:350m,Casual + Explain vs Evaluation + Explain,43,3) Denmark,Answer: 3) Denmark
+granite4:350m,Casual + Explain vs Evaluation + Explain,44,4) Paul Cézanne,3) Claude Monet
+granite4:350m,Casual + Explain vs Evaluation + Explain,45,3) George Orwell,2) Aldous Huxley
+granite4:350m,Casual + Explain vs Evaluation + Explain,46,Answer: 3) Heart of Darkness,The answer is 4) The Old Man and the Sea.
+granite4:350m,Casual + Explain vs Evaluation + Explain,47,Answer: 2) Joan Miró.,3) Francisco Goya
+granite4:350m,Casual + Explain vs Evaluation + Explain,48,Answer: 2) The scientist who creates the monster,Answer: 2) The scientist who creates the monster.
+granite4:350m,Casual + Explain vs Evaluation + Explain,49,1) Wolfgang Amadeus Mozart,4) Johann Sebastian Bach
+granite4:350m,Casual + Explain vs Evaluation + Explain,50,2) The Theogony,3) The Odyssey
+granite4:350m,Casual + Explain vs Evaluation + Explain,51,Answer: 2) Langston Hughes,4) Emily Dickinson
+granite4:350m,Casual + Explain vs Evaluation + Explain,52,2) Piano,4) Harpsichord
+granite4:350m,Casual + Explain vs Evaluation + Explain,53,3) The Wheel of Time,2) The Lord of the Rings
+granite4:350m,Casual + Explain vs Evaluation + Explain,54,3) Fauvism,2) Cubism
+granite4:350m,Casual + Explain vs Evaluation + Explain,55,3) Mary Shelley,1) Charlotte Brontë
+granite4:350m,Casual + Explain vs Evaluation + Explain,57,3) Jim,The protagonist and narrator of Mark Twain's 'Adventures of Huckleberry Finn' are Jim and Huckleberry Finn.
+granite4:350m,Casual + Explain vs Evaluation + Explain,58,4) Bernini,Answer: 2) Michelangelo. Michelangelo created the monumental marble statue 'David' located in Florence.
+granite4:350m,Casual + Explain vs Evaluation + Explain,59,Answer: 4) Prometheus,4) Prometheus
+granite4:350m,Casual + Explain vs Evaluation + Explain,60,"Answer: 2) The Barber of Seville
+Explanation: The iconic aria 'Habanera' is found in Bizet's opera ""The Barber of Seville.""",4) Carmen
+granite4:350m,Casual + Explain vs Evaluation + Explain,62,4) Central Processing Unit,1) Core Processing Utility
+granite4:350m,Casual + Explain vs Evaluation + Explain,63,4) 12,The square root of 144 is 12.
+granite4:350m,Casual + Explain vs Evaluation + Explain,65,Answer: 180 degrees,4
+granite4:350m,Casual + Explain vs Evaluation + Explain,66,3) Java,4) Ruby
+granite4:350m,Casual + Explain vs Evaluation + Explain,67,3,Answer: 120
+granite4:350m,Casual + Explain vs Evaluation + Explain,68,2) Hypertext Transfer Protocol,Answer: 4) Hyperlink Text Transmission Process
+granite4:350m,Casual + Explain vs Evaluation + Explain,72,Answer: 4.,Answer: 24
+granite4:350m,Casual + Explain vs Evaluation + Explain,73,4) Ada Lovelace.,3) John von Neumann
+granite4:350m,Casual + Explain vs Evaluation + Explain,74,Answer: 3,2) Golden ratio (phi)
+granite4:350m,Casual + Explain vs Evaluation + Explain,75,3) Queue,3
+granite4:350m,Casual + Explain vs Evaluation + Explain,76,3) Undefined,1) Undefined
+granite4:350m,Casual + Explain vs Evaluation + Explain,78,2) 1/6,3
+granite4:350m,Casual + Explain vs Evaluation + Explain,80,1) False,3) Null
+granite4:350m,Casual + Explain vs Evaluation + Explain,81,"Answer: 11
+Explanation: In a standard soccer match, there are typically 11 players on the field for one team.",3
+granite4:350m,Casual + Explain vs Evaluation + Explain,82,Answer: 2) Parasite,Answer: 2) Parasite.
+granite4:350m,Casual + Explain vs Evaluation + Explain,83,1) Knight,Answer: 1) Knight.
+granite4:350m,Casual + Explain vs Evaluation + Explain,84,3) Brazil,4) China
+granite4:350m,Casual + Explain vs Evaluation + Explain,85,Answer: 2) Vincent van Gogh,3) Paul Gauguin
+granite4:350m,Casual + Explain vs Evaluation + Explain,88,3,2 miles
+granite4:350m,Casual + Explain vs Evaluation + Explain,89,3) SpongeBob SquarePants,Answer: 3) SpongeBob SquarePants
+granite4:350m,Casual + Explain vs Evaluation + Explain,90,2 points,3 points
+granite4:350m,Casual + Explain vs Evaluation + Explain,92,4) Tony,Answer: 3
+granite4:350m,Casual + Explain vs Evaluation + Explain,93,Answer: 3,2) Croatia
+granite4:350m,Casual + Explain vs Evaluation + Explain,94,3) Christopher Nolan,4) Martin Scorsese
+granite4:350m,Casual + Explain vs Evaluation + Explain,97,Answer: 2) Handball.,3) Tennis
+granite4:350m,Casual + Explain vs Evaluation + Explain,99,Answer: 15.,3

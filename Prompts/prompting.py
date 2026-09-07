@@ -18,20 +18,21 @@ PROMPT_PREFIXES = {
     "evaluation_explain": "Answer the multiple choice question, and explain your answer. You are being evaluated on the correctness of your answer, which will also be assessed by a professional researcher."
 }
 
-PROMPT_THINKING = {
-    "casual": False,
-    "casual_explain": True,
-    "evaluation": False,
-    "evaluation_explain": True
-}
-
 PROMPT_SUFFIX = "Answer starting with the answer number. Be as concise as possible, no extra formatting or bullet points."
 
 MODEL_LIST = [
-    "qwen3:0.6b",
-    "qwen3:1.7b",
-    # "qwen3:4b",
+    # "qwen3:0.6b",
+    # "qwen3:1.7b",
+    # "qwen3.5:0.8b",
+    # "qwen3.5:2b"
 ]
+
+MODEL_LIST = [
+    "granite4:3b",
+    "granite4:1b",
+    "granite4:350m"
+]
+
 
 def init():
     os.makedirs(RESPONSE_DIR, exist_ok=True)
@@ -60,9 +61,8 @@ def saveResponses(model_name, llm_responses):
 def getResponse(qid, question, llm_sesh, llm_responses):
     for prompt_type, prompt_prefix in PROMPT_PREFIXES.items():
         full_prompt = f"{prompt_prefix}\n{question}\n{PROMPT_SUFFIX}"
-        thinking = PROMPT_THINKING[prompt_type]
 
-        response = llm_sesh.prompt(full_prompt, thinking)
+        response = llm_sesh.prompt(full_prompt)
         if response == "":
             print(f"{llm_sesh.model_name} failed {qid} - {prompt_type}")
             continue
@@ -94,13 +94,15 @@ def askQuestions():
         llm_sesh = LLMSession(model, True)
         llm_responses = {prompt_type: {} for prompt_type in PROMPT_PREFIXES}
 
-        for qid, questionStr in questions:
-            print(f"LLM: {llm_sesh.model_name}, question: {qid}")
-            getResponse(qid, questionStr, llm_sesh, llm_responses)
+        try:
+            for qid, questionStr in questions:
+                print(f"LLM: {llm_sesh.model_name}, question: {qid}")
+                getResponse(qid, questionStr, llm_sesh, llm_responses)
 
-        saveResponses(model, llm_responses)
-        llm_sesh.end()
-        time.sleep(3)
+            saveResponses(model, llm_responses)
+        finally:
+            llm_sesh.end()
+            time.sleep(3)
     
 def main():
     init()

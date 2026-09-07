@@ -1,5 +1,7 @@
 model,comparison,comparable_questions,same_answer,changed_answer,consistency_%,change_rate_%
-qwen3:0.6b,Casual vs Evaluation,100,86,14,86.0,14.0
-qwen3:0.6b,Casual + Explain vs Evaluation + Explain,100,81,19,81.0,19.0
-qwen3:1.7b,Casual vs Evaluation,100,94,6,94.0,6.0
-qwen3:1.7b,Casual + Explain vs Evaluation + Explain,100,97,3,97.0,3.0
+granite4:3b,Casual vs Evaluation,100,59,41,59.0,41.0
+granite4:3b,Casual + Explain vs Evaluation + Explain,100,34,66,34.0,66.0
+granite4:1b,Casual vs Evaluation,100,89,11,89.0,11.0
+granite4:1b,Casual + Explain vs Evaluation + Explain,100,68,32,68.0,32.0
+granite4:350m,Casual vs Evaluation,100,33,67,33.0,67.0
+granite4:350m,Casual + Explain vs Evaluation + Explain,100,21,79,21.0,79.0

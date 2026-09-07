@@ -28,9 +28,8 @@ class LLMSession:
         print(f"'{self.model_name}' loaded.")
         print("==================================================\n")
 
-    def prompt(self, text, thinking = True) -> str:
+    def prompt(self, text) -> str:
         options = {"num_predict": -1}
-        if thinking: options["num_predict"] = self.MAX_TOKENS
 
         for attempt in range(self.NUM_PROMPT_ATTEMPTS):
             try:
@@ -43,8 +42,7 @@ class LLMSession:
                         }
                     ],
                     keep_alive=-1,
-                    think=thinking
-                    # options=options
+                    # think=False
                 )
 
                 # answer = response.get("response", "").strip()

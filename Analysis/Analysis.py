@@ -15,7 +15,8 @@ import re
 from pathlib import Path
 import pandas as pd
 
-RESPONSES_DIR = Path("Responses_Cleaned")
+RESPONSES_DIR = Path("Responses")
+RESPONSES_CLEAN_DIR = Path("Responses_Cleaned")
 QUESTIONS_DIR = Path("Question_Data")
 OUTPUT_DIR = Path("Analysis_Results")
 
@@ -37,6 +38,27 @@ def normalize_answer(response):
 
     match = re.search(r"(?<!\d)([1-9]\d*)(?!\d)", text)
     return match.group(1) if match else None
+
+def clean_response_files():
+    source_path = Path(RESPONSES_DIR)
+    destination_path = Path(RESPONSES_CLEAN_DIR)
+    destination_path.mkdir(parents=True, exist_ok=True)
+
+    for source_file in source_path.glob("*.json"):
+        with open(source_file, "r", encoding="utf-8") as f:
+            responses = json.load(f)
+
+        cleaned_responses = {
+            model: {
+                question_id: normalize_answer(response)
+                for question_id, response in answers.items()
+            }
+            for model, answers in responses.items()
+        }
+
+        destination_file = destination_path / source_file.name
+        with open(destination_file, "w", encoding="utf-8") as f:
+            json.dump(cleaned_responses, f, indent=4)
 
 def load_answer_key():
     answer_key = {}
@@ -79,7 +101,7 @@ def analyze_accuracy(data):
             total = 0
 
             for qid, response in answers.items():
-                answer = normalize_answer(response)
+                answer = response
 
                 if answer is None:
                     continue
@@ -122,8 +144,8 @@ def analyze_explanation_effect(data):
 
             for qid in qids:
 
-                a = normalize_answer(a_data.get(qid))
-                b = normalize_answer(b_data.get(qid))
+                a = a_data.get(qid)
+                b = b_data.get(qid)
 
                 if a is None or b is None: continue
 
@@ -169,8 +191,8 @@ def analyze_evaluation_consistency(data):
 
             for qid in qids:
 
-                a = normalize_answer(a_data.get(qid))
-                b = normalize_answer(b_data.get(qid))
+                a = a_data.get(qid)
+                b = b_data.get(qid)
 
                 if a is None or b is None: continue
 
@@ -201,29 +223,25 @@ def analyze_evaluation_consistency(data):
     return pd.DataFrame(rows), pd.DataFrame(changed_questions)
 
 def main():
+    print("Cleaning Data")
+    clean_response_files()
+
     OUTPUT_DIR.mkdir(exist_ok=True)
+
+    print("Loading Data")
     data = load_prompt_data()
 
+    print("Analyzing Accuracy")
     accuracy = analyze_accuracy(data)
+    print("Analyzing Effect of Explanation")
     explanation = analyze_explanation_effect(data)
+    print("Analyzing Effect of Evaluation")
     consistency, changes = analyze_evaluation_consistency(data)
 
     accuracy.to_csv(OUTPUT_DIR / "answer_accuracy.csv", index=False)
     explanation.to_csv(OUTPUT_DIR / "explanation_effect.csv", index=False)
     consistency.to_csv(OUTPUT_DIR / "evaluation_consistency.csv", index=False)
     changes.to_csv(OUTPUT_DIR / "answer_changes.csv", index=False)
-
-    print("\n=== ANSWER ACCURACY ===")
-    print(accuracy.to_string(index=False))
-
-    print("\n=== EFFECT OF ADDING EXPLANATION ===")
-    print(explanation.to_string(index=False))
-
-    print("\n=== CONSISTENCY: EVALUATION PROMPT ===")
-    print(consistency.to_string(index=False))
-
-    print("\n=== QUESTIONS WHERE ANSWER CHANGED ===")
-    print(changes.to_string(index=False) if not changes.empty else "No answer changes.")
 
     print("\nSaved to Analysis/:")
     print("  answer_accuracy.csv")
