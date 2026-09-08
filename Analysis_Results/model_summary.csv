@@ -1,0 +1,7 @@
+model,total_correct,total_questions,overall_accuracy_%,casual_evaluation_consistency_%,casual_explain_evaluation_explain_consistency_%,casual_explain_change_rate_%,evaluation_explain_change_rate_%
+gemma3:1b,270,399,67.67,86.87,89.0,19.19,16.0
+gemma3:270m,107,386,27.72,60.0,78.72,22.68,17.89
+gemma3:4b,354,400,88.5,97.0,97.0,1.0,1.0
+granite4:1b,349,400,87.25,96.0,94.0,4.0,4.0
+granite4:350m,149,398,37.44,42.0,35.71,59.0,65.31
+granite4:3b,382,400,95.5,99.0,99.0,0.0,0.0
