@@ -222,6 +222,85 @@ def analyze_evaluation_consistency(data):
 
     return pd.DataFrame(rows), pd.DataFrame(changed_questions)
 
+def create_model_summary(accuracy, explanation, consistency):
+    """
+    Creates one row per model containing:
+    - Overall accuracy across all prompt types
+    - Evaluation consistency for casual vs evaluation
+    - Evaluation consistency for casual + explain vs evaluation + explain
+    - Explanation effect change rate for casual vs casual + explain
+    - Explanation effect change rate for evaluation vs evaluation + explain
+    """
+
+    # Overall accuracy across all prompt types
+    overall_accuracy = (
+        accuracy.groupby("model")
+        .agg(
+            total_correct=("correct", "sum"),
+            total_questions=("total", "sum")
+        )
+        .reset_index()
+    )
+
+    overall_accuracy["overall_accuracy_%"] = (
+        overall_accuracy["total_correct"]
+        / overall_accuracy["total_questions"]
+        * 100
+    ).round(2)
+
+    # Explanation effect: extract the two change rates
+    explanation_pivot = explanation.pivot(
+        index="model",
+        columns="comparison",
+        values="change_rate_%"
+    ).reset_index()
+
+    explanation_pivot = explanation_pivot.rename(columns={
+        "Casual vs Casual + Explain":
+            "casual_explain_change_rate_%",
+        "Evaluation vs Evaluation + Explain":
+            "evaluation_explain_change_rate_%"
+    })
+
+    # Evaluation consistency: extract the two consistency rates
+    consistency_pivot = consistency.pivot(
+        index="model",
+        columns="comparison",
+        values="consistency_%"
+    ).reset_index()
+
+    consistency_pivot = consistency_pivot.rename(columns={
+        "Casual vs Evaluation":
+            "casual_evaluation_consistency_%",
+        "Casual + Explain vs Evaluation + Explain":
+            "casual_explain_evaluation_explain_consistency_%"
+    })
+
+    # Merge everything into one row per model
+    summary = overall_accuracy.merge(
+        explanation_pivot,
+        on="model",
+        how="left"
+    ).merge(
+        consistency_pivot,
+        on="model",
+        how="left"
+    )
+
+    # Keep only the useful summary columns
+    summary = summary[[
+        "model",
+        "total_correct",
+        "total_questions",
+        "overall_accuracy_%",
+        "casual_evaluation_consistency_%",
+        "casual_explain_evaluation_explain_consistency_%",
+        "casual_explain_change_rate_%",
+        "evaluation_explain_change_rate_%"
+    ]]
+
+    return summary
+
 def main():
     print("Cleaning Data")
     clean_response_files()
@@ -233,21 +312,52 @@ def main():
 
     print("Analyzing Accuracy")
     accuracy = analyze_accuracy(data)
+
     print("Analyzing Effect of Explanation")
     explanation = analyze_explanation_effect(data)
+
     print("Analyzing Effect of Evaluation")
     consistency, changes = analyze_evaluation_consistency(data)
 
-    accuracy.to_csv(OUTPUT_DIR / "answer_accuracy.csv", index=False)
-    explanation.to_csv(OUTPUT_DIR / "explanation_effect.csv", index=False)
-    consistency.to_csv(OUTPUT_DIR / "evaluation_consistency.csv", index=False)
-    changes.to_csv(OUTPUT_DIR / "answer_changes.csv", index=False)
+    print("Creating Model Summary")
+    summary = create_model_summary(
+        accuracy,
+        explanation,
+        consistency
+    )
 
-    print("\nSaved to Analysis/:")
+    accuracy.to_csv(
+        OUTPUT_DIR / "answer_accuracy.csv",
+        index=False
+    )
+
+    explanation.to_csv(
+        OUTPUT_DIR / "explanation_effect.csv",
+        index=False
+    )
+
+    consistency.to_csv(
+        OUTPUT_DIR / "evaluation_consistency.csv",
+        index=False
+    )
+
+    changes.to_csv(
+        OUTPUT_DIR / "answer_changes.csv",
+        index=False
+    )
+
+    summary.to_csv(
+        OUTPUT_DIR / "model_summary.csv",
+        index=False
+    )
+
+    print("\nSaved to Analysis_Results/:")
     print("  answer_accuracy.csv")
     print("  explanation_effect.csv")
     print("  evaluation_consistency.csv")
     print("  answer_changes.csv")
+    print("  model_summary.csv")
+
 
 if __name__ == "__main__":
     main()
