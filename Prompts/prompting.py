@@ -10,6 +10,7 @@ from LLMSession import LLMSession
 
 QUESTIONS_JSON_FILE = "Question_Data/questions_json.json"
 RESPONSE_DIR = "Responses"
+LOG_FILE = os.path.join(RESPONSE_DIR, "llm_responses.log")
 
 PROMPT_PREFIXES = {
     "casual": "Answer the multiple choice question.",
@@ -64,6 +65,13 @@ def saveResponses(model_name, llm_responses):
             json.dump(existing_data, f, indent=4, ensure_ascii=False)
             f.write("\n")
 
+
+def logResponses(model_name, llm_responses):
+    """Overwrite the log file with the current model's complete response batch."""
+    with open(LOG_FILE, "w", encoding="utf-8") as log_file:
+        json.dump({"model": model_name, "responses": llm_responses}, log_file, indent=4, ensure_ascii=False)
+        log_file.write("\n")
+
 def getResponse(qid, question, llm_sesh, llm_responses):
     for prompt_type, prompt_prefix in PROMPT_PREFIXES.items():
         full_prompt = f"{prompt_prefix}\n{question}\n{PROMPT_SUFFIX}"
@@ -72,9 +80,8 @@ def getResponse(qid, question, llm_sesh, llm_responses):
         if response == "":
             print(f"{llm_sesh.model_name} failed {qid} - {prompt_type}")
             continue
-
-        llm_responses.setdefault(prompt_type, {})
-        llm_responses[prompt_type][qid] = response
+        
+        llm_responses[prompt_type][qid] = response.replace('\n', ". ")
 
 def askQuestions():
     with open(QUESTIONS_JSON_FILE, "r") as questionFile:
@@ -104,7 +111,7 @@ def askQuestions():
             for qid, questionStr in questions:
                 print(f"LLM: {llm_sesh.model_name}, question: {qid}")
                 getResponse(qid, questionStr, llm_sesh, llm_responses)
-
+                logResponses(model, llm_responses)
 
             saveResponses(model, llm_responses)
         finally:

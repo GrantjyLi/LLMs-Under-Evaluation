@@ -9,3 +9,5 @@ gemma3:270m,Casual vs Evaluation,100,50,50,50.0,50.0
 gemma3:270m,Casual + Explain vs Evaluation + Explain,100,67,33,67.0,33.0
 gemma3:1b,Casual vs Evaluation,100,57,43,57.0,43.0
 gemma3:1b,Casual + Explain vs Evaluation + Explain,100,49,51,49.0,51.0
+gemma3:4b,Casual vs Evaluation,100,57,43,57.0,43.0
+gemma3:4b,Casual + Explain vs Evaluation + Explain,100,22,78,22.0,78.0
