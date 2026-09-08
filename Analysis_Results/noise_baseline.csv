@@ -1,0 +1,6 @@
+model,comparison,comparable_questions,same_answer,changed_answer,noise_baseline_%
+granite4:3b,Casual v1 vs Casual v2,100,100,0,0.0
+granite4:1b,Casual v1 vs Casual v2,95,95,0,0.0
+gemma3:270m,Casual v1 vs Casual v2,99,90,9,9.0909
+gemma3:1b,Casual v1 vs Casual v2,99,97,2,2.0202
+gemma3:4b,Casual v1 vs Casual v2,100,100,0,0.0

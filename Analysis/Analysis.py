@@ -21,8 +21,11 @@ QUESTIONS_DIR = Path("Question_Data")
 OUTPUT_DIR = Path("Analysis_Results")
 
 QUESTION_FILE = "questions_json.json"
+
+NOISE_COMPARE_FILE = "casual_v2.json"
 PROMPT_FILES = {
     "casual": "casual.json",
+    "casual_v2": "casual_v2.json",
     "casual_explain": "casual_explain.json",
     "evaluation": "evaluation.json",
     "evaluation_explain": "evaluation_explain.json",
@@ -95,6 +98,7 @@ def analyze_accuracy(data):
     rows = []
 
     for prompt_type, prompt_data in data.items():
+        if prompt_type == NOISE_COMPARE_FILE: continue
         for model, answers in prompt_data.items():
 
             correct = 0
@@ -115,7 +119,7 @@ def analyze_accuracy(data):
                 "prompt": prompt_type,
                 "correct": correct,
                 "total": total,
-                "accuracy_%": round(correct / total * 100, 2)
+                "accuracy_%": round(correct / total * 100, 4) if total else 0
             })
 
     return pd.DataFrame(rows)
@@ -161,7 +165,7 @@ def analyze_explanation_effect(data):
                 "comparable_questions": comparable,
                 "same_answer": same,
                 "changed_answer": changed,
-                "change_rate_%": round(changed / comparable * 100, 2) if comparable else 0,
+                "change_rate_%": round(changed / comparable * 100, 4) if comparable else 0,
             })
 
     return pd.DataFrame(rows)
@@ -216,13 +220,73 @@ def analyze_evaluation_consistency(data):
                 "comparable_questions": comparable,
                 "same_answer": same,
                 "changed_answer": changed,
-                "consistency_%": round(same / comparable * 100, 2) if comparable else 0,
-                "change_rate_%": round(changed / comparable * 100, 2) if comparable else 0,
+                "consistency_%": round(same / comparable * 100, 4) if comparable else 0,
+                "change_rate_%": round(changed / comparable * 100, 4) if comparable else 0,
             })
 
     return pd.DataFrame(rows), pd.DataFrame(changed_questions)
 
-def create_model_summary(accuracy, explanation, consistency):
+def analyze_noise_baseline(data):
+    """
+    Measures how often a model changes its answer when given
+    the exact same casual prompt twice.
+
+    This is the baseline variability / noise floor.
+    """
+
+    rows = []
+    changed_questions = []
+
+    for model in data["casual"]:
+        a_data = data["casual"].get(model, {})
+        b_data = data["casual_v2"].get(model, {})
+
+        qids = sorted(
+            set(a_data) | set(b_data),
+            key=lambda x: int(x)
+        )
+
+        same = 0
+        changed = 0
+        comparable = 0
+
+        for qid in qids:
+
+            a = a_data.get(qid)
+            b = b_data.get(qid)
+
+            if a is None or b is None:
+                continue
+
+            comparable += 1
+
+            if a == b:
+                same += 1
+            else:
+                changed += 1
+
+                changed_questions.append({
+                    "model": model,
+                    "comparison": "Casual v1 vs Casual v2",
+                    "question_id": qid,
+                    "first_answer": a,
+                    "second_answer": b,
+                })
+
+        rows.append({
+            "model": model,
+            "comparison": "Casual v1 vs Casual v2",
+            "comparable_questions": comparable,
+            "same_answer": same,
+            "changed_answer": changed,
+            "noise_baseline_%": round(
+                changed / comparable * 100, 4
+            ) if comparable else 0,
+        })
+
+    return pd.DataFrame(rows), pd.DataFrame(changed_questions)
+
+def create_model_summary(accuracy, explanation, consistency, noise):
     """
     Creates one row per model containing:
     - Overall accuracy across all prompt types
@@ -246,7 +310,7 @@ def create_model_summary(accuracy, explanation, consistency):
         overall_accuracy["total_correct"]
         / overall_accuracy["total_questions"]
         * 100
-    ).round(2)
+    ).round(4)
 
     # Explanation effect: extract the two change rates
     explanation_pivot = explanation.pivot(
@@ -276,6 +340,17 @@ def create_model_summary(accuracy, explanation, consistency):
             "casual_explain_evaluation_explain_consistency_%"
     })
 
+    noise_pivot = noise.pivot(
+    index="model",
+    columns="comparison",
+    values="noise_baseline_%"
+    ).reset_index()
+
+    noise_pivot = noise_pivot.rename(columns={
+        "Casual v1 vs Casual v2":
+            "noise_baseline_%"
+    })
+
     # Merge everything into one row per model
     summary = overall_accuracy.merge(
         explanation_pivot,
@@ -283,6 +358,10 @@ def create_model_summary(accuracy, explanation, consistency):
         how="left"
     ).merge(
         consistency_pivot,
+        on="model",
+        how="left"
+    ).merge(
+        noise_pivot,
         on="model",
         how="left"
     )
@@ -293,6 +372,7 @@ def create_model_summary(accuracy, explanation, consistency):
         "total_correct",
         "total_questions",
         "overall_accuracy_%",
+        "noise_baseline_%",
         "casual_evaluation_consistency_%",
         "casual_explain_evaluation_explain_consistency_%",
         "casual_explain_change_rate_%",
@@ -319,11 +399,15 @@ def main():
     print("Analyzing Effect of Evaluation")
     consistency, changes = analyze_evaluation_consistency(data)
 
+    print("Analyzing Noise Baseline")
+    noise, noise_changes = analyze_noise_baseline(data)
+
     print("Creating Model Summary")
     summary = create_model_summary(
         accuracy,
         explanation,
-        consistency
+        consistency,
+        noise
     )
 
     accuracy.to_csv(
@@ -346,6 +430,16 @@ def main():
         index=False
     )
 
+    noise.to_csv(
+        OUTPUT_DIR / "noise_baseline.csv",
+        index=False
+    )
+
+    noise_changes.to_csv(
+        OUTPUT_DIR / "noise_answer_changes.csv",
+        index=False
+    )
+
     summary.to_csv(
         OUTPUT_DIR / "model_summary.csv",
         index=False
@@ -356,6 +450,8 @@ def main():
     print("  explanation_effect.csv")
     print("  evaluation_consistency.csv")
     print("  answer_changes.csv")
+    print("  noise_baseline.csv")
+    print("  noise_answer_changes.csv")
     print("  model_summary.csv")
 
 

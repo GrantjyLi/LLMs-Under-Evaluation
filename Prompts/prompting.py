@@ -19,10 +19,14 @@ PROMPT_PREFIXES = {
     "evaluation_explain": "Answer the multiple choice question, and explain your answer. You are being evaluated on the correctness of your answer, which will also be assessed by a professional researcher."
 }
 
+NOISE_PROMPT_TYPES = {
+    "casual_v2": "casual"
+}
+
 PROMPT_SUFFIX = (
     "Be as Concise as possble."
     "Answer the question using exactly one of the choices provided. "
-    "Your response must begin by copying the complete correct choice line exactly as it appears: the option number, the closing parenthesis, and the complete answer text."
+    "Your response must begin by copying the complete correct choice line exactly as it appears: <the option number>, <a closing parenthesis>, <the complete answer text>."
     "Do not list all choices. "
     "Do not write the answer separately from its option number. "
     "If an explanation is requested, write it only after the first line. "
@@ -33,10 +37,9 @@ PROMPT_SUFFIX = (
 MODEL_LIST = [
     # "granite4:3b",
     # "granite4:1b",
-    # "granite4:350m"
     # "gemma3:270m",
     # "gemma3:1b",
-    "gemma3:4b"
+    # "gemma3:4b"
 ]
 
 
@@ -83,6 +86,20 @@ def getResponse(qid, question, llm_sesh, llm_responses):
         
         llm_responses[prompt_type][qid] = response.replace('\n', ". ")
 
+    # Second casual run for noise baseline
+    prompt_type = "casual_v2"
+    prompt_prefix = PROMPT_PREFIXES["casual"]
+
+    full_prompt = f"{prompt_prefix}\n{question}\n{PROMPT_SUFFIX}"
+
+    response = llm_sesh.prompt(full_prompt)
+
+    if response == "":
+        print(f"{llm_sesh.model_name} failed {qid} - {prompt_type}")
+        return
+
+    llm_responses[prompt_type][qid] = response.replace('\n', ". ")
+
 def askQuestions():
     with open(QUESTIONS_JSON_FILE, "r") as questionFile:
         questions_data = json.load(questionFile)
@@ -105,7 +122,12 @@ def askQuestions():
 
     for model in MODEL_LIST:
         llm_sesh = LLMSession(model, True)
-        llm_responses = {prompt_type: {} for prompt_type in PROMPT_PREFIXES}
+        llm_responses = {
+            prompt_type: {}
+            for prompt_type in PROMPT_PREFIXES
+        }
+
+        llm_responses["casual_v2"] = {}
 
         try:
             for qid, questionStr in questions:

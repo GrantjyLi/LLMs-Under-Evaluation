@@ -1,13 +1,11 @@
 model,comparison,comparable_questions,same_answer,changed_answer,change_rate_%
-granite4:3b,Casual vs Casual + Explain,100,100,0,0.0
-granite4:3b,Evaluation vs Evaluation + Explain,100,100,0,0.0
-granite4:1b,Casual vs Casual + Explain,100,96,4,4.0
-granite4:1b,Evaluation vs Evaluation + Explain,100,96,4,4.0
-granite4:350m,Casual vs Casual + Explain,100,41,59,59.0
-granite4:350m,Evaluation vs Evaluation + Explain,98,34,64,65.31
-gemma3:270m,Casual vs Casual + Explain,97,75,22,22.68
-gemma3:270m,Evaluation vs Evaluation + Explain,95,78,17,17.89
-gemma3:1b,Casual vs Casual + Explain,99,80,19,19.19
+granite4:3b,Casual vs Casual + Explain,100,98,2,2.0
+granite4:3b,Evaluation vs Evaluation + Explain,100,98,2,2.0
+granite4:1b,Casual vs Casual + Explain,95,91,4,4.2105
+granite4:1b,Evaluation vs Evaluation + Explain,99,97,2,2.0202
+gemma3:270m,Casual vs Casual + Explain,97,75,22,22.6804
+gemma3:270m,Evaluation vs Evaluation + Explain,95,78,17,17.8947
+gemma3:1b,Casual vs Casual + Explain,99,80,19,19.1919
 gemma3:1b,Evaluation vs Evaluation + Explain,100,84,16,16.0
 gemma3:4b,Casual vs Casual + Explain,100,99,1,1.0
 gemma3:4b,Evaluation vs Evaluation + Explain,100,99,1,1.0

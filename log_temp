@@ -1,0 +1,20 @@
+{
+    "model": "gemma3:4b",
+    "responses": {
+        "casual": {
+            
+        },
+        "casual_explain": {
+            
+        },
+        "evaluation": {
+           
+        },
+        "evaluation_explain": {
+            
+        },
+        "casual_v2": {
+            
+        }
+    }
+}
