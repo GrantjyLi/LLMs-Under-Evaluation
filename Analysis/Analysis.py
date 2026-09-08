@@ -80,7 +80,7 @@ def load_prompt_data():
     data = {}
     for prompt_type, filename in PROMPT_FILES.items():
 
-        path = RESPONSES_DIR / filename
+        path = RESPONSES_CLEAN_DIR / filename
 
         if not path.exists():
             raise FileNotFoundError(f"Missing file: {path}")

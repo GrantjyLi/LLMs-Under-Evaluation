@@ -1,13 +1,13 @@
 model,comparison,comparable_questions,same_answer,changed_answer,consistency_%,change_rate_%
-granite4:3b,Casual vs Evaluation,100,59,41,59.0,41.0
-granite4:3b,Casual + Explain vs Evaluation + Explain,100,34,66,34.0,66.0
-granite4:1b,Casual vs Evaluation,100,89,11,89.0,11.0
-granite4:1b,Casual + Explain vs Evaluation + Explain,100,68,32,68.0,32.0
-granite4:350m,Casual vs Evaluation,100,33,67,33.0,67.0
-granite4:350m,Casual + Explain vs Evaluation + Explain,100,21,79,21.0,79.0
-gemma3:270m,Casual vs Evaluation,100,50,50,50.0,50.0
-gemma3:270m,Casual + Explain vs Evaluation + Explain,100,67,33,67.0,33.0
-gemma3:1b,Casual vs Evaluation,100,57,43,57.0,43.0
-gemma3:1b,Casual + Explain vs Evaluation + Explain,100,49,51,49.0,51.0
-gemma3:4b,Casual vs Evaluation,100,57,43,57.0,43.0
-gemma3:4b,Casual + Explain vs Evaluation + Explain,100,22,78,22.0,78.0
+granite4:3b,Casual vs Evaluation,100,99,1,99.0,1.0
+granite4:3b,Casual + Explain vs Evaluation + Explain,100,99,1,99.0,1.0
+granite4:1b,Casual vs Evaluation,100,96,4,96.0,4.0
+granite4:1b,Casual + Explain vs Evaluation + Explain,100,94,6,94.0,6.0
+granite4:350m,Casual vs Evaluation,100,42,58,42.0,58.0
+granite4:350m,Casual + Explain vs Evaluation + Explain,98,35,63,35.71,64.29
+gemma3:270m,Casual vs Evaluation,95,57,38,60.0,40.0
+gemma3:270m,Casual + Explain vs Evaluation + Explain,94,74,20,78.72,21.28
+gemma3:1b,Casual vs Evaluation,99,86,13,86.87,13.13
+gemma3:1b,Casual + Explain vs Evaluation + Explain,100,89,11,89.0,11.0
+gemma3:4b,Casual vs Evaluation,100,97,3,97.0,3.0
+gemma3:4b,Casual + Explain vs Evaluation + Explain,100,97,3,97.0,3.0
