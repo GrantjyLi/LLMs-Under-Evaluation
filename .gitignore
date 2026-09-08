@@ -2,5 +2,3 @@
 venv
 .env
 Prompts/__pycache__
-Responses/*
-Responses_Cleaned/*
