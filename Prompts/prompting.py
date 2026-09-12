@@ -44,11 +44,16 @@ MODEL_LIST = [
 
 
 def init():
+    """
+    Initialize the response directory for storing generated outputs.
+    """
     os.makedirs(RESPONSE_DIR, exist_ok=True)
 
 def saveResponses(model_name, llm_responses):
-    """Save new responses while preserving response data for other models."""
-
+    """
+    Save new responses while preserving response data for other models.
+    Persist the current model's responses while preserving existing entries for other models.
+    """
     print(f"Saving responses for: {model_name}")
     for response_type, response_data in llm_responses.items():
         file_path = os.path.join(RESPONSE_DIR, f"{response_type}.json")
@@ -76,6 +81,9 @@ def logResponses(model_name, llm_responses):
         log_file.write("\n")
 
 def getResponse(qid, question, llm_sesh, llm_responses):
+    """
+    Collect responses for a single question across all prompt variants, including the noise baseline.
+    """
     for prompt_type, prompt_prefix in PROMPT_PREFIXES.items():
         full_prompt = f"{prompt_prefix}\n{question}\n{PROMPT_SUFFIX}"
 
@@ -101,6 +109,9 @@ def getResponse(qid, question, llm_sesh, llm_responses):
     llm_responses[prompt_type][qid] = response.replace('\n', ". ")
 
 def askQuestions():
+    """
+    Run the configured models across all questions and prompt styles and save the results.
+    """
     with open(QUESTIONS_JSON_FILE, "r") as questionFile:
         questions_data = json.load(questionFile)
 

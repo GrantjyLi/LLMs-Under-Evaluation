@@ -2,3 +2,5 @@
 venv
 .env
 Prompts/__pycache__
+log_temp
+Responses/llm_responses.log

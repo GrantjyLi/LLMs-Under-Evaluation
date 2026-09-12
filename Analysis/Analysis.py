@@ -32,6 +32,9 @@ PROMPT_FILES = {
 }
 
 def normalize_answer(response):
+    """
+    Extract the leading answer choice number from a raw model response.
+    """
     if response is None:
         return None
 
@@ -43,6 +46,9 @@ def normalize_answer(response):
     return match.group(1) if match else None
 
 def clean_response_files():
+    """
+    Normalize raw response files into a cleaned, parseable format for downstream analysis.
+    """
     source_path = Path(RESPONSES_DIR)
     destination_path = Path(RESPONSES_CLEAN_DIR)
     destination_path.mkdir(parents=True, exist_ok=True)
@@ -64,6 +70,9 @@ def clean_response_files():
             json.dump(cleaned_responses, f, indent=4)
 
 def load_answer_key():
+    """
+    Load the question answer key from the source JSON data.
+    """
     answer_key = {}
 
     path = QUESTIONS_DIR / QUESTION_FILE
@@ -80,6 +89,9 @@ def load_answer_key():
     return answer_key
 
 def load_prompt_data():
+    """
+    Load all cleaned prompt response files into a dictionary keyed by prompt type.
+    """
     data = {}
     for prompt_type, filename in PROMPT_FILES.items():
 
@@ -94,6 +106,7 @@ def load_prompt_data():
     return data
 
 def analyze_accuracy(data):
+    # Compute overall answer accuracy for each model and prompt type against the answer key.
     answer_key = load_answer_key()
     rows = []
 
@@ -125,6 +138,9 @@ def analyze_accuracy(data):
     return pd.DataFrame(rows)
 
 def analyze_explanation_effect(data):
+    """
+    Measure how often adding explanations changes a model's answer across comparable prompts.
+    """
     rows = []
     comparisons = [
         ("casual", "casual_explain", "Casual vs Casual + Explain"),
@@ -171,6 +187,9 @@ def analyze_explanation_effect(data):
     return pd.DataFrame(rows)
 
 def analyze_evaluation_consistency(data):
+    """
+    Compare casual and evaluation prompts to measure how consistently models answer the same way.
+    """
     rows = []
     changed_questions = []
     comparisons = [
@@ -294,6 +313,8 @@ def create_model_summary(accuracy, explanation, consistency, noise):
     - Evaluation consistency for casual + explain vs evaluation + explain
     - Explanation effect change rate for casual vs casual + explain
     - Explanation effect change rate for evaluation vs evaluation + explain
+    
+    Builds a merged summary table that combines accuracy, explanation effects, consistency, and noise metrics.
     """
 
     # Overall accuracy across all prompt types
@@ -382,6 +403,7 @@ def create_model_summary(accuracy, explanation, consistency, noise):
     return summary
 
 def main():
+    # Run the full analysis pipeline from raw responses to CSV outputs.
     print("Cleaning Data")
     clean_response_files()
 
